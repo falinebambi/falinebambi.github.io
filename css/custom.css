@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* Begin custom styles */
+
+/* custom pink */
+.pink {
+  background-color: #d87a66;
+  border-color: #d87a66 !important
+}
+
+.carousel-inner{
+    padding:0px;
+list-style:none;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.icon-html-five:before {
+    content: "\e901";
+}
