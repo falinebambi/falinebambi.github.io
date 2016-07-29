@@ -1,7 +1,6 @@
 @charset "utf-8";
-/*
- 
- */
+
+
 
  /*
   Table of Contents:
@@ -73,7 +72,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Helvetica, serif;
+  font-family: 'Palm Beach', Helvetica; sans-serif;
   background-color: #F3F3F3;
   font-size: 24px;
   font-style: normal;
@@ -161,13 +160,13 @@ h1, h2, h3, h4, h5, h6, p, span, blockquote, hr {
 }
 
 h1 {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  letter-spacing: -1px;
-  font-weight: 700;
+  font-family:'palmbeach', Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 h2 {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   letter-spacing: -2px;
   font-weight: 700;
 }
@@ -179,7 +178,7 @@ h4 {
 
 h3 {
   font-size: 24px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #F26F70;
@@ -187,7 +186,7 @@ h3 {
 }
 
 p, p a {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 100;
   margin: 0 0 0px;
@@ -206,7 +205,7 @@ p a {
 a {
   color: #F26F70;
   font-size: 16px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   font-weight: 100;
   text-decoration: none;
   text-transform: uppercase;
@@ -218,7 +217,7 @@ a {
 }
 
 a.textlink {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   font-style: italic;
   font-weight: 400;
   text-decoration: underline;
@@ -376,7 +375,7 @@ iframe {
 .noborder { border: none !important }
 
 .padding {
-  padding: 110px 0
+  padding: 60px 0
 }
 
 .centertext {
@@ -548,7 +547,7 @@ a.scrollto {
   font-family: 'Arial', sans-serif;
   color: #fff;
   text-shadow: none;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: "";
   -khtml-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
@@ -593,7 +592,7 @@ a.scrollto {
 
 #menumodal ul li a {
   font-size: 38px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   color: #fff;
   line-height: 48px;
   font-weight: 400;
@@ -616,7 +615,7 @@ a.scrollto {
 #menumodal ul li span {
   display: block;
   font-size: 13px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #eee;
@@ -695,7 +694,7 @@ a.scrollto {
   float: right;
   font-size: 51px;
   font-weight: normal;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   color: #fff;
   text-shadow: none;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -881,8 +880,8 @@ a.scrollto {
 
 #header {
   left: 0;
-  width: 80px;
-  background: #222222;
+  width: 0px;
+  background: transparent;
   position: fixed;
   height: 100%;
   max-height: 100%;
@@ -1214,7 +1213,7 @@ header#pagemeta hr.mini {
 
 h3 span.number {
   font-size: 60px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   font-weight: 700;
   font-style: italic;
   top: 10px;
@@ -1232,7 +1231,7 @@ blockquote.bigtext {
   text-align: center;
   font-size: 50px;
   line-height: 68px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   letter-spacing: -3px;
   font-weight: 700;
   border-left: none;
@@ -1262,7 +1261,7 @@ blockquote.bigtext {
 
 #stats span.counter {
   font-size: 80px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   font-weight: 700;
   line-height: 80px;
   color: #ccc;
@@ -1531,6 +1530,7 @@ blockquote.bigtext {
   width: 100%
 }
 
+
 .hero img {
   margin: auto auto 10px;
   position: relative;
@@ -1538,12 +1538,32 @@ blockquote.bigtext {
 }
 
 .hero h1 {
-  font-size: 25px;
+  font-size: 65px;
   width: 95%;
   color: #fff;
   margin: 0 auto 20px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Cabin', Helvetica, sans-serif;
   font-weight: 700;
+}
+
+.hero h1:hover {
+  opacity: 0.5;
+  text-decoration: line-through !important;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.hero h1:click {
+  opacity: 0.5;
+  text-decoration: <specialising in> !important;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .hero p {
@@ -1898,13 +1918,13 @@ blockquote.bigtext {
 
 .meta.col-md-4 h4 {
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 .meta.col-md-4 p {
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: none;
   letter-spacing: 0;
@@ -2092,10 +2112,16 @@ blockquote.bigtext {
   width: 100%;
   white-space: normal;
   display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+  transform: rotate(90deg);
+  float: left;
+  transform-origin: left top 0;
   top: 20px
 }
+
+.vertical-text {
+  
+}
+
 
 #projects .projects .label-text h3 a {
   color: #eee;
@@ -2139,8 +2165,8 @@ ul.filters li p {
   margin-bottom: 0;
   border-bottom: 3px solid transparent;
   border-top: 3px solid transparent;
-  font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-family: 'Cabin', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
@@ -2186,7 +2212,7 @@ ul.filters li p:hover {
   width: 90%;
   position: relative;
   font-weight: 800;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -2236,7 +2262,7 @@ ul.filters li p:hover {
 
 #team .team-meta .author .name {
   color: #3FD8DF;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   line-height: 23px;
   font-weight: 800
 }
@@ -2766,7 +2792,7 @@ ul.filters li p:hover {
 .present,
 .born {
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #F26F70;
@@ -2848,7 +2874,7 @@ ul.filters li p:hover {
 
 .articles h1 a {
   font-size: 36px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: -1px;
   font-weight: 700;
   text-decoration: none;
@@ -2916,7 +2942,7 @@ body#contact form#contactForm.well {
 body#contact .form-control {
   padding: 36px 0 48px;
   border: none;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 13px;
@@ -2933,7 +2959,7 @@ body#contact textarea.form-control {
 }
 
 body#contact form#contactForm .btn-primary {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 13px;
@@ -2963,7 +2989,7 @@ body#contact form#contactForm .alert-danger {
   border-radius: 0;
   border: none;
   font-size: 15px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   width: 80%;
   background-color: transparent;
@@ -2994,7 +3020,7 @@ body#contact .help-block ul li {
 }
 
 span.icon-at {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   font-weight: bold;
   font-size: 16px;
 }
@@ -3024,7 +3050,7 @@ span.icon-at {
 .plan ul {
   background-color: #fff;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-bottom: 4px solid #777;
@@ -3077,7 +3103,7 @@ span.icon-at {
 
 .pricing-table span {
   font-size: 24px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3105,17 +3131,17 @@ footer {
 }
 
 footer .padding {
-  padding: 160px 0
+  padding: 10px 0
 }
 
 footer p {
   color: #C0C0C0;
-  margin: 30px 0 0
+  margin: 10px 0 0
 }
 
 footer small {
   font-size: 13px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3153,7 +3179,7 @@ footer img:hover {
   -moz-border-radius: 0;
   border-radius: 0;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
@@ -3334,7 +3360,7 @@ footer img:hover {
   -moz-border-radius: 0;
   border-radius: 0;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -3451,7 +3477,7 @@ footer img:hover {
   border-radius: 0;
   height: 40px;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -3506,7 +3532,7 @@ footer img:hover {
 .breadcrumb > .active {
   color: #434a54;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase
 }
@@ -3515,7 +3541,7 @@ footer img:hover {
   margin-bottom: 0;
   color: #434a54;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase
 }
@@ -3708,7 +3734,7 @@ footer img:hover {
 
  .alert {
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-border-radius: 0;
@@ -3789,7 +3815,7 @@ footer img:hover {
 .nav-tabs > li > a {
   margin-right: 0;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -3939,7 +3965,7 @@ a.list-group-item {
 }
 a.list-group-item .list-group-item-heading {
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -4085,7 +4111,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 }
 .modaltagline {
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   float: left;
@@ -4166,7 +4192,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 }
 .panel-title {
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -4382,11 +4408,12 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 /* Background color presets                             */
 /********************************************************/
 
-/* White */
+/* White 
 .white {
   background-color: #fff;
   border-color: #fff !important
-}
+}*/
+
 /* Black */
 .black {
   background-color: #000000;
@@ -4637,3 +4664,304 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
   background-color: #968859;
   border-color: #968859 !important
 }
+
+
+/********************************************************/
+/* Custom                             */
+/********************************************************/
+
+/********************************************************/
+/* SERVICES section                             */
+/********************************************************/
+
+
+
+section#services p{
+  text-align: justify;
+  max-width: 800px;
+  margin: 100px auto;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px
+}
+
+
+.strike{
+    position: relative;
+}
+
+
+span#service1:hover, span#service2:hover, span#service3:hover, span#service4:hover, span#service5:hover  {
+  color: #d87a66;
+}
+
+
+
+span#service1:hover ~ span.strike::after, span#service2:hover ~ span.strike::after, span#service3:hover ~ span.strike::after, span#service4:hover ~ span.strike::after, span#service5:hover ~ span.strike::after{
+  display: none;
+}
+
+
+
+.strike1::after{
+    content: '';
+    border-bottom: 10px solid grey;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    display: block
+}
+
+.strike::after{
+    content: '';
+    border-bottom: 10px solid grey;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    display: block
+}
+
+span.wondering{
+  text-align: center;
+  display: block;
+}
+.title-left{
+  text-align: left;
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-left: 2px solid;
+  padding: 30px;
+  letter-spacing: 4px;
+  clear: both
+}
+
+/********************************************************/
+/* Nav section                             */
+/********************************************************/
+
+
+
+#marchio{
+  float: left;
+  margin-top: 27px;
+  font-family: 'Helvetica';
+  font-size: 20px;
+}
+
+
+a#menu-icon {
+  color: #484848;
+  display: none;
+  position: relative;
+  float: right;
+  top: 33px;
+  right: 60px;
+}
+
+a#menu-icon:hover {
+  color: #28d7b1;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+a#menu-icon:active {
+  text-decoration: none;
+}
+
+nav#menu {
+  width: 100%;
+  height: 80px;
+  background-color: transparent !important;
+  z-index:9998;
+  position: fixed;
+  padding-top: 30px
+}
+
+div#ul_menu{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -65px;
+  margin-top: -196px;
+}
+
+nav#menu ul{
+  float: right;
+  height: 80px;
+  border-right: 1px solid;
+  padding-right: 30px;
+  display: none
+}
+
+nav ul li{
+  float: left;
+  list-style: none;
+  margin: 30px 10px;
+}
+
+nav ul li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: 'DINPro-Bold';
+}
+
+nav ul li a:hover{
+  text-decoration: line-through;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.selected {
+  text-decoration: line-through !important;
+}
+
+.white{
+  color: #fff
+}
+
+a.icon{
+    display: block;
+    position: relative;
+    float: right;
+    margin-top: 15px;
+    z-index: 9999
+  }
+
+div.mobilenav{
+  font-family: 'courier_newregular';
+  padding-top: 50px;
+}
+
+/*----------- MOBILE MENU -----------*/
+
+*{   -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+.top-animate {
+    background: #fff !important;
+    top: 13px !important;
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.mid-animate {
+    opacity: 0;
+}
+.bottom-animate {
+    background: #fff !important;
+    top: 13px !important;
+    -webkit-transform: rotate(-225deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-225deg);
+}
+.top-menu {
+    top: 5px;
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #F9A530;
+}
+.mid-menu {
+    top: 13px;
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #F9A530;
+}
+.bottom-menu {
+    top: 21px;
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #F9A530;
+}
+.menui {
+    background: #000;
+    transition: 0.6s ease;
+    transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+    margin-top: 10px;
+    position: absolute;
+}
+
+
+.icon {
+    z-index: 999;
+    position: fixed;
+/*    background: rgba(0, 0, 0, 0.21);*/
+    display: block;
+    padding: 9px;
+    height: 32px;
+    width:32px;
+    margin: 0px;
+    top: 0;
+    left: 0;
+}
+
+.mobilenav {
+    /*    top: 47px !important;*/
+    font-family: inherit;
+    top: 0;
+    left:0;
+    z-index: 999;
+    display: none;
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+.mobilenav li {
+    list-style-type: none;
+    text-align: center;
+    padding: 1vh;
+}
+
+.mobilenav li:last-child{
+  font-size: 9px;
+  margin-top: 35px;
+}
+
+.mobilenav li a {
+    font-size: 150%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    width: 100%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.mobilenav li a:hover {
+  opacity: 0.5;
+  text-decoration: line-through !important;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+}
+
+.mobilenav li:first-child {
+    /*margin-top: 60px;*/
+}
+
+
+img.close-icon{
+  margin-top: 7px
+}
+

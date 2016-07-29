@@ -11,7 +11,7 @@
     <meta name="keywords" content="berlin, web, designer, design, developer, front end developer, websites, code, agency, digital, creative, web page"><!-- keywords -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Favicon, (always keep in root of folder) -->
 
-    <title>Palm Beach Agency | Berlin </title><!-- site title -->
+    <title>Palm Beach Web Agency | Berlin</title><!-- site title -->
 
     <!-- Load Our CSS - Do not alter the load order -->
     <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
@@ -22,8 +22,10 @@
     <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
 
     <!-- Load our fonts from Google -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-    
+
+    <link href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
 
     <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
     <!--[if IE]>
@@ -43,6 +45,8 @@
     <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+    <script src="js/hamburgler.js"> </script> 
     
     <!-- Load these in the <head> for quicker IE8+ load times -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,173 +63,141 @@
     <div class="loadstack">
         <div class="spinner"></div>
     </div>
-    <!-- ============================ Main menu, (modal window) ============================ -->
 
-    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
-
-        <!-- Close modal trigger -->
-        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
-            <span class="icon-close"></span>
-        </button>
-
-    <!-- ============================ side menu  ============================ -->
-
-        <button class="hamburger-menu">
-            <span class="label">Menu</span>
-            <span class="hamburger-menu-wrapper">
-                <span class="overlay"></span>
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
-                <span class="line line-4"></span>
-            </span>
-        </button>
-
-
-        <aside class="side-nav hidden">
-
-            <nav>
-                <ul>
-                    <li><a data-page="projects" href="/work">Work<span class="underline"></span></a></li>
-                    <li><a data-page="about" href="/about">About<span class="underline"></span></a></li>
-                    <li><a data-page="news" href="/news">News<span class="underline"></span></a></li>
-                    <li><a data-page="careers" href="/careers">Careers<span class="underline"></span></a></li>
-                    <li><a data-page="contact" href="/contact">Contact<span class="underline"></span></a></li>
-                </ul>
-             </nav>
-
-        </aside>
-
-        <aside class="side-logo hidden">
-
-            <a href="/"><span class="icon icon-sd-logo"><span class="title">Palm Beach Agency</span></span></a>
-
-        </aside>
-
-
-    <!-- ============================ Menu content (popup)  ============================ -->
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div id="menumodalLabel" class="modal-title">
-                        <div class="modaltagline">
-                            <h3> Web Agency | Berlin</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <ul class="row motion">
-                        <li class="col-md-4 col-sm-6 one">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/home.jpg')"></div>
-                            <a href="index.html" title="Home">Home</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 two">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/data.jpg')"></div>
-                            <a href="portfolio-data.html" title="Data Revenue">Data Revenue<span>Design // Front end development</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 three">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/thesis.jpg')"></div>
-                            <a href="portfolio-thesis.html" title="Masters Thesis">Masters Thesis<span>Research // Photography </span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 four">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/pba.jpg')"></div>
-                            <a href="portfolio-pba.html" title="Premier's Book Award">Premier's Book Award<span>Media Communications // Project Management </span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 five">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/scandi.jpg')"></div>
-                            <a href="portfolio-scand.html" title="Home with Slider Hero">Scandinavan Decor<span>Media Communications // interior design</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 six">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/slwa.jpg')"></div>
-                            <a href="portfolio-slwa.html" title="State Library of Western Australia">State Library of Western Australia<span> Media Communications // Publications</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 seven">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/stray.jpg')"></div>
-                            <a href="portfolio-stray.html" title="Stray Magazine">Stray Magazine<span>Design // Publications</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 nine">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/aaltoliving.jpg')"></div>
-                            <a href="portfolio-aaltoliving.html" title="Aalto Living">Aalto Living<span>Design // Web // Ecommerce</span></a>
-                        </li> 
-                        <li class="col-md-4 col-sm-6 nine">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/scoop.jpg')"></div>
-                            <a href="portfolio-scoop.html" title="Scoop Magazine">Scoop Magazine<span>Content writing // Publishing </span></a>
-                        </li> 
-                        <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/aalto.jpg')"></div>
-                            <a href="portfolio-aalto.html" title="Aalto Magazine">Aalto Magazine<span>Design // Publications</span></a>
-                        </li>   
-                        <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/chance.jpg')"></div>
-                            <a href="portfolio-chance.html" title="Chance Encounter">Chance Encounter<span>Design // Front end development</span></a>
-                        </li>                         
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <h3>Get in Touch</h3>
-                    <h4>Berlin // +49 176 35534787// kirstynandkirstyn@gmail.com</h4>
-                </div>
-            </div>
-        </div>
+        <!-- NAV --> 
+  
+  <nav id="menu" class="white">
+  <div class="container">
+    <div id="marchio"><a href="#home" style="img-src="logo_P.png"</div>
+    <a href="#" id="menu-icon" class="icon-menu"></a>
+    <!--ul id="menu-list" class="white">
+      <li><a id="about-button" href="#about" class="white">About</a></li>
+      <li><a id="services-button" href="#services" class="white">Services</a></li>
+      <li><a id="portfolio-button" href="#portfolio" class="white">Portfolio</a></li>
+      <li><a id="studio-button" href="#studio" class="white">Studio</a></li>
+      <li><a id="journal-button" href="#journal" class="white">Journal</a></li>
+      <li><a id="contact-button" href="#contact" class="white">Contact</a></li>
+    </ul>-->
+    <div class="mobilenav">
+      <div id="ul_menu">
+        <li class="voce-menu"><a href="#home">Home</a></li>
+        <li class="voce-menu"><a href="#about">About</a></li>
+        <li class="voce-menu"><a href="#services">Services</a></li>
+        <li class="voce-menu" id="portfolio-button"><a href="portfolio-2015.html">Projects</a></li>
+        <li class="voce-menu"><a href="#contact">Contact</a></li>
+        <li class="voce-menu"><a href="index.html">- Palm Beach Web Agency -</a></li>
+      </div>
+    </div> 
+    <a href="javascript:void(0)" class="icon white"> 
+       <div class="hamburger"> 
+         <div class="menui top-menu" style="background:#fff"></div> 
+         <div class="menui mid-menu" style="background:#fff"></div> 
+         <div class="menui bottom-menu" style="background:#fff"></div> 
+       </div> 
+    </a>
     </div>
-    <!-- ============================ Start the page content ============================ -->
-
-    <!-- Leading Page Container -->
-    <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
-    <!-- <div id="wrapper" class="page-content"> removing this took away side menu but might fuck something else up--> 
+  </nav>
 
         <!-- ============================ Section one: hero ============================ -->
 
-        <section id="start" class="herofade hero cover element-img" style="background-image: url('img/hero.jpg')">
-            <h1 class="wow fadeInUp" data-wow-delay="0.5s" style="text-align: left; padding: 0; top-margin: 0px;"> Palm Beach. </h1>
-            <div class="tagline">
-                <h1 class="wow fadeInUp" data-wow-delay="0.5s">DESIGN + DEVELOPMENT</h1>
-                <h1 class="wow fadeInUp" data-wow-delay="0.7s">Palm Beach is a Berlin based Web agency specialising in Web Design, Front End Development &amp; Publishing. We combine design &amp; code to create beautiful, intuitive &amp; responsive websites</h1>
-                <a class="scrollto" href="#two" title="Get Reading"><span class="icon-arrow-down2"></span></a>
-                <div class="overlay pink"></div>
-            </div>
+        <section id="start" class="herofade hero cover element-img" style="
+            background-image: url(img/pb-logo.png),url(img/hero.jpg);
+            background-position: center center, 50% 50%, top left;
+            background-origin: border-box, content-box, border-box;
+            background-repeat: no-repeat, no-repeat, no-repeat;">
+            <div class="overlay pink"></div>
+            <div align: class="tagline">
+            <h1 class="wow fadeInUp" data-wow-delay="0.7s">Berlin based Web Design and Development</h1>
+                <a class="scrollto" href="#two" title=""><span class="icon-arrow-down2"></span></a>   
+           </div>
         </section>
-
         <!-- ============================ Section two: intro ============================ -->
 
         <section id="two" class="container wow fadeInUp scrollreceive" data-wow-delay="0.5s">
             <div class="row padding">
                 <div class="col-xs-12">
-                    <h3>Good Design makes us tick</h3>
-                    <hr class="mini">
-                    We believe good design should transcend the occasional to be part of the everyday thats why we are taking over the online world one site at a time to bring a little more happiness into your every click. <br>
-                    <br>As well as some old school design (you know the printed kind) we have experience in UI, UX, Design &amp; Development &amp; will work with you through research, copy writing, wireframes, design &amp; web development to get that baby online. <br>
+                    <h3 class="title-left wow fadeInUp">Good design makes us tick</h3>
+                    <p>We believe good design should transcend the occasional to be part of the everyday, that's why we are taking over the online world one site at a time to bring a little more user happiness into every experience. <br>
+                    <br>
+                    As well as some old school design (you know the printed kind) we specialising in Web Design, Front End Development &amp; Publishing and can take you from wireframes through to development to get that baby online. <br>
                     <br> If you have a project in mind don't be stranger and get in touch. 
                     </p> 
                 </div>
             </div>
         </section>
-        <!-- ============================ Section four: what we do ============================ -->
+
+        <!-- SECTION SERVICES --> 
+
+         <section class="container-fluid red-it">
+            <div class="row">
+            <div class="col-md-6 element-img" style="background-image: url('img/Final-grid-medium-speed4.gif'); height: 568px"></div>
+                <div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
+                    <h3 class="title-left wow fadeInUp">Services</h3>
+        <p class="wow fadeInUp">
+
+          <span class="service">
+            <span id="service5"> Web </span><span class="strike">: HTML </span><br>
+            <span class="strike">CSS, JavaScript, JQuery</span><br>
+            <span class="strike"></span>
+
+          <span class="service">
+            <span id="service1">branding </span><span class="strike">: Brand Naming, Brand Positioning,   </span><br>
+            <span class="strike"> Brand Personality, Corporate Branding. </span>
+          </span><span class="strike">media</span><br>
+            <span class="strike">nisi elit consequat</span>
+
+          <span class="service">
+            <span id="service2"> communication </span><span class="strike"> : Creative</span><br>
+            <span class="strike">Design, Advertising, Communication Strategy,</span><br>
+            <span class="strike">Packaging Design, Retail Design. </span>
+          </span><span class="strike">advs design</span><br>
+            <span class="strike">torquent per conubia nostra necew</span> 
+            
+          <span class="service">
+            <span id="service3"> digital pr </span><br>
+            <span class="strike">Web Strategy, Social Media Marketing, Press </span><br>
+            <span class="strike">Office, Web Campaign, Community Management. </span><br>
+          </span>
+            <span class="strike">social</span> 
+
+          <span class="service">
+            <span id="service4">web </span><span class="strike"> : Web Writing, Web Structure, Web</span><br>
+            <span class="strike">Marketing, Web Design, Web Positioning. </span>
+          </span>
+          <span class="strike">web </span><br>
+          <span class="strike">web js social</span>
+
+          
+         
+                </div>
+            </div>
+        </section>
+
+    
+
+        <!-- ============================ Section four: quote
 
         <section id="icons" class="red-lt">
             <div class="container padding">
                 <div class="row">
                     <div class="wow fadeInUp" data-wow-delay="0.5s"> 
-                        <h1> "People ignore design that ignores people thats why we push the boundaries to bring user experience to the heart of everything we do" </h1>                    
-                        
+                        <h1> People ignore design that ignores people - that's why we push the boundaries to bring user experience to the heart of everything we do.</h1>                    
                     </div>   
                 </div>
             </div>
-        </section>
+        </section> ============================ -->
 
         <!-- ============================ Section three: latest projects ============================ -->
 
-        <section class="container-fluid white">
-            <div class="row">
+        <section class="container-fluid red-it">
+            <div class="row padding">
                 <div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
-                    <h3>Latest</h3>
-                    <hr class="mini">
-                    <ul class="list">
-                        <li><span class="icon-radio-checked"></span> Email campaign for record label RMXRBN </li>
-                        <li><span class="icon-radio-checked"></span> Event website for Chance Encounter held by The Collective in London </li>   
-                        <li><span class="icon-radio-checked"></span> We are developing a curated mobile app that helps you choose the trendiest airfiltering house plants and helps you to keep them alive. Because not killing alive plants make us better people.</li>
+                    <h3 class="title-left wow fadeInUp">Fresh off the press</h3>
+                        <p><span class="icon-embed"></span> Email campaign for record label RMXRBN<br> <br>
+                        <span class="icon-embed"></span> Event website for Chance Encounter held by The Collective in London <br><br>  
+                        <span class="icon-embed"></span> We are developing a hybrid app that helps you choose the best airfiltering house plants and keep them alive. Because not killing plants make us better people.</p>
                 </div>
-                <div class="col-md-6 element-img" style="background-image: url('img/ceeceeberlin.jpg'); height: 568px"></div>
+                <div class="col-md-6 element-img" style="background-image: url('img/collage.png'); height: 568px"></div>
 
             
 
@@ -240,8 +212,8 @@
 
         <div class="row padding">
                 <div class="col-xs-12 centertext">
-                  <h3>Projects</h3>
-                  <hr class="title"></div>
+                  <h3>| Projects |</h3> <br>
+                  
           <div class="col-xs-12"><!-- Titlebar -->
             <div class="container-fluid sortlinks">
               <ul class="filters">
@@ -250,14 +222,14 @@
                 <li><p class="filter" data-filter="comms">communications</p></li>
                 <li><p class="filter" data-filter="publishing">publishing</p></li>
               </ul>
-            </div>
+            </div> <br> 
           </div>
             <div class="projects web" data-cat="web">
             <div class="projects-wrapper">     
               <img src="img/portfolio/sortable/chance.jpg" alt="Add alt tag" />
               <div class="label">
                 <div class="label-text">
-                  <h3><a href="portfolio-chance.html" title="View Item">Chance Encounters<span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-chance.html" title="View Item"><strong>Chance Encounters</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -269,7 +241,7 @@
               <img src="img/portfolio/sortable/data.jpg" alt="Add alt tag" />
               <div class="label">
                 <div class="label-text">
-                  <h3><a href="portfolio-data.html" title="View Item">Data Revenue <span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-data.html" title="View Item"><strong>Data Revenue</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -281,7 +253,7 @@
               <img src="img/portfolio/sortable/thesis.jpg" alt="Add alt tag" />
               <div class="label"> 
                 <div class="label-text">
-                  <h3><a href="portfolio-thesis.html" title="View Item">Masters Thesis <span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-thesis.html" title="View Item"><strong>EC University</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -293,7 +265,7 @@
               <img src="img/portfolio/sortable/pba.jpg" alt="Add alt tag" />
               <div class="label">
                 <div class="label-text">
-                  <h3><a href="portfolio-pba.html" title="View Item">Premier's Book Award <span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-pba.html" title="View Item"><strong>Premier's Book Award</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -305,7 +277,7 @@
               <img src="img/portfolio/sortable/scandi.jpg" alt="Add alt tag" />
               <div class="label">
                 <div class="label-text">
-                  <h3><a href="portfolio-scand.html" title="View Item">Scandinavan Decor<span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-scand.html" title="View Item"><strong>Scandinavan Decor</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -317,7 +289,7 @@
               <img src="img/portfolio/sortable/slwa.jpg" alt="Add alt tag" />
               <div class="label">
                 <div class="label-text">
-                  <h3><a href="portfolio-slwa.html" title="View Item">State Library of Western Australia <span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-slwa.html" title="View Item"><strong>SLWA</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -328,7 +300,7 @@
               <img src="img/portfolio/sortable/stray.jpg" alt="Add alt tag" />
               <div class="label">
                 <div class="label-text">
-                  <h3><a href="portfolio-stray.html" title="View Item">Stray Magazine <span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-stray.html" title="View Item"><strong>Stray Magazine</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -339,7 +311,7 @@
               <img src="img/portfolio/sortable/aalto.jpg" alt="Add alt tag" />
               <div class="label">
                 <div class="label-text">
-                  <h3><a href="portfolio-aalto.html" title="View Item">Photography Magazine<span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-aalto.html" title="View Item"><strong>Independent</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -350,7 +322,7 @@
               <img src="img/portfolio/sortable/aaltoliving.jpg" alt="Add alt tag" />
               <div class="label">
                 <div class="label-text">
-                  <h3><a href="portfolio-aaltoliving.html" title="View Item">Aalto Living<span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-aaltoliving.html" title="View Item"><strong>Aalto Living</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -361,7 +333,7 @@
               <img src="img/portfolio/sortable/scoop.jpg" alt="Add alt tag" />
               <div class="label">
                 <div class="label-text">
-                  <h3><a href="portfolio-scoop.html" title="View Item">Scoop Publishing<span class="icon-arrow-right2"></span></a></h3>
+                  <h3><a href="portfolio-scoop.html" title="View Item"><strong>Scoop Publishing</strong></a></h3>
                 </div>
                 <div class="label-bg"></div>
               </div>
@@ -371,25 +343,24 @@
         </div>
     </section><!-- / .container-fluid -->
     </div>
-
 <!-- ============================ Footer ============================ -->
     <section>
         <footer class="padding">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                    <a href="index.html" title="Portfolio" title="logo"><img src="img/logo_small.png" alt="Add alt tag"></a>
+                        <img src="img/palmbeachlogo.png">
+                        <h3>| DON'T BE A STRANGER | </h3>
 
-                        <h3>Get in Touch</h3>
-                        <p>FACTORY Berlin // +49 176 35534787 // kirstynandkirstyn@gmail.com</p>
-                        <small>&copy; 2016 PALM BEACH | Web Design Agency Berlin. All Rights Reserved.
-                        </small>
-                        <hr class="mini central light-grey-dk">
+                        <h4> kirstynandkirstyn@gmail.com | +49 176 35534787 | The Factory Berlin </h4>
+                        <h4>&copy; 2016 Palm Beach Web Agency </h4>
                     </div>
                 </div>
             </div>
         </footer>
     </section>
+<!-- ============================ End Footer ============================ -->
+
 </div> <!-- / END page #wrapper -->
 
 
@@ -408,7 +379,6 @@
     <script src="js/jquery.mixitup.min.js"></script><!-- MixItUp plugin - for sortable portfolio -->
 
     <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->
-
     <!-- Initialize MixItUp plugin -->
     <script>
       $(function () {

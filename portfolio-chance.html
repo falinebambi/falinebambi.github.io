@@ -12,7 +12,7 @@
     <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
 
-    <title>Kirstyn McMullan | Portfolio</title><!-- Your page/site title -->
+    <title>Palm Beach Web Agency | Berlin</title><!-- Your page/site title -->
 
     <!-- Load Our CSS - Do not alter the load order -->
     <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
@@ -52,6 +52,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     
+      <script src="js/hamburgler.js"> </script> 
     <!-- Load these in the <head> for quicker IE8+ load times -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -67,206 +68,116 @@
     <div class="loadstack">
         <div class="spinner"></div>
     </div>
-    <!-- ============================ Main menu, (modal window) ============================ -->
-
-    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
-
-        <!-- Close modal trigger -->
-        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
-            <span class="icon-close"></span>
-        </button>
-
-        <!-- Menu content -->
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div id="menumodalLabel" class="modal-title">
-                        <div class="modaltagline">
-                            <h3>Portfolio of Kirstyn McMullan.</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <ul class="row motion">
-                        <li class="col-md-4 col-sm-6 one">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/home.jpg')"></div>
-                            <a href="index.html" title="Home">Home</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 two">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/data.jpg')"></div>
-                            <a href="portfolio-data.html" title="Data Revenue">Data Revenue<span>Front End development // Design </span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 three">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/thesis.jpg')"></div>
-                            <a href="portfolio-thesis.html" title="Masters Thesis">Masters Thesis<span>Research // Photography </span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 four">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/pba.jpg')"></div>
-                            <a href="portfolio-pba.html" title="Premier's Book Award">Premier's Book Award<span> Media Communications // Project Management </span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 five">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/scandi.jpg')"></div>
-                            <a href="portfolio-scand.html" title="Home with Slider Hero">Scandinavan Decor<span> Media Communications // interior design</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 six">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/slwa.jpg')"></div>
-                            <a href="portfolio-slwa.html" title="State Library of Western Australia">State Library of Western Australia<span> Media Communications // Publications</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 seven">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/stray.jpg')"></div>
-                            <a href="portfolio-stray.html" title="Stray Magazine">Stray Magazine<span> Design // Publications</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 nine">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/aaltoliving.jpg')"></div>
-                            <a href="portfolio-aaltoliving.html" title="Aalto Living">Aalto Living<span> Design // Web // Ecommerce</span></a>
-                        </li> 
-                        <li class="col-md-4 col-sm-6 nine">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/scoop.jpg')"></div>
-                            <a href="portfolio-scoop.html" title="Scoop Magazine">Scoop Magazine<span> Publishing </span></a>
-                        </li> 
-                        <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/aalto.jpg')"></div>
-                            <a href="portfolio-aalto.html" title="Aalto Magazine">Aalto Magazine<span> Design // Publications</span></a>
-                        </li> 
-                        <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/chance.jpg')"></div>
-                            <a href="portfolio-chance.html" title="Chance Encounter">Chance Encounter<span> Design // Development</span></a>
-                        </li>                           
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <h3>Get in Touch</h3>
-                    <h4>Berlin // +49 176 355 347 // kirstynandkirstyn@gmail.com</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ============================ Header/fixed sidebar ============================ -->
-
-    <header id="header">
-        
-        <!-- Main menu toggle -->
-        <button class="toggle" data-toggle="modal" data-target="#menumodal">
-            <span class="menu-bar bar-1"></span>
-            <span class="menu-bar bar-2"></span>
-            <span class="menu-bar bar-3"></span>
-        </button>
-
-        <!-- Bullet navigation -->
-        <nav id="bullets" class="cover">
-            <ul>
-                <li class="current-page-item"><a href="#wrapper"></a></li>
-                <li><a href="#two"></a></li>
-                <li><a href="#three"></a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
-    <button class="social" data-toggle="modal" data-target="#socialmodal">
-        <span class="icon-share"></span>
-    </button>
     
-    <!-- End header/fixed sidebar -->
+<!-- NAV --> 
+  
+  <nav id="menu" class="white">
+  <div class="container">
+    <!--<div id="marchio"><a href="#home" class="white">Palm Beach</a></div>
+    <a href="#" id="menu-icon" class="icon-menu"></a>
+    <ul id="menu-list" class="white">
+      <li><a id="about-button" href="#about" class="white">About</a></li>
+      <li><a id="services-button" href="#services" class="white">Services</a></li>
+      <li><a id="portfolio-button" href="#portfolio" class="white">Portfolio</a></li>
+      <li><a id="studio-button" href="#studio" class="white">Studio</a></li>
+      <li><a id="journal-button" href="#journal" class="white">Journal</a></li>
+      <li><a id="contact-button" href="#contact" class="white">Contact</a></li>
+    </ul>-->
+    <div class="mobilenav">
+      <div id="ul_menu">
+        <li class="voce-menu"><a href="#home">Home</a></li>
+        <li class="voce-menu"><a href="#about">About</a></li>
+        <li class="voce-menu"><a href="#services">Services</a></li>
+        <li class="voce-menu" id="portfolio-button"><a href="portfolio-2015.html">Projects</a></li>
+        <li class="voce-menu"><a href="#contact">Contact</a></li>
+        <li class="voce-menu"><a href="index.html">- Palm Beach Web Agency -</a></li>
+      </div>
+    </div> 
+    <a href="javascript:void(0)" class="icon white"> 
+       <div class="hamburger"> 
+         <div class="menui top-menu" style="background:#fff"></div> 
+         <div class="menui mid-menu" style="background:#fff"></div> 
+         <div class="menui bottom-menu" style="background:#fff"></div> 
+       </div> 
+    </a>
+    </div>
+  </nav>
+    
+        <!-- ============================ Header Start ============================ -->
 
-    <!-- ============================ Start the page content ============================ -->
-
-    <!-- Leading Page Container -->
-    <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
-    <div id="wrapper" class="page-content">
-
-        <!-- ============================ Section Start ============================ -->
-
-        <section class="container-fluid titlebar">
+        <section id="three" class="container-fluid wow fadeInUp" data-wow-delay="0.5s" style="background-image:url('img/portfolio/data/drlogo.png'); background-position: center center, 50% 50%, top left;
+            background-origin: border-box, content-box, border-box;
+            background-repeat: no-repeat, no-repeat, no-repeat;">
             <div class="row">
-                <div class="col-xs-12">
-                    <h3 class="pull-left">Project: Design &amp; Developement</h3>
-                    <h3 class="pull-right"><a href="index.html" class="back" title="Back">Back <span class="icon-undo2"></span></a></h3>
+        <div class="col-md-8 centered">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+            
+                <ul class="carousel-inner">
+                    <li class="item active">
+                        <img src="img/portfolio/chance/ChanceEnc.gif" alt="First slide"></li>
                 </div>
+                </div> 
+        <div class="col-md-4 centered"
+        style="vertical-align"
+        <h2>web design and development</h2>
+        </div>
+            </div>
+    </div>
+<div id="push">              
+              </div>
+</div>
             </div>
         </section>
-
-        <!-- ============================ Section End ============================== -->
-
-        <!-- ============================ Section Start ============================ -->
-
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 element-img parallax" style="background-image: url('img/portfolio/chance/banner_chance.png'); height: 100%">
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section End ============================== -->
-
         <!-- ============================ Section Start ============================ -->
 
         <section id="two" class="container-fluid white">
             <div class="row">
                 <div class="col-md-8 textpadding">
-                    <h3>Chance Encounter</h3>
+                    <img src="img/portfolio/.png" style= "width:500px">
                     <hr class="mini">
-                    <p>To celebrate the launch of the world's largest co-living building, The Collective Old Oak (as seen in The Guardian, BBC and ITV) are turning London's Old Street Magic Roundabout into a wonderland of mad hatters, crazy creatures and madness. With a two day turnaround I designed and built a website dedicated to this event.</p>
+                    <h2>Chance Encounter</h2>
+                    <hr class="mini">
+                    <p>To celebrate the launch of the world's largest co-living building, The Collective Old Oak (as seen in The Guardian, BBC and ITV) are turning London's Old Street Magic Roundabout into a wonderland of mad hatters, crazy creatures and madness. With a two day turnaround I designed and built a website dedicated to this event</p>
                 </div>
                 <div class="meta col-md-4 textpadding dark-grey-dk wow fadeInRight" data-wow-delay="0.4s">
-                    <h3>Project Meta</h3>
+                    <h3>Project</h3>
                     <hr class="mini">
-                    <h4>Client: The Collective</h4>
-                    <h4>Year: 2016</h4>
-                    <h4>Task: Design &amp; develop a website for The Collective's upcoming event with a two day turnaround.</h4>
-                    <h4>Skills: Design, Html, CSS, JS</h4>
+                    <a href="http://chanceencounters.thecollective.co.uk">www.chanceencounters.thecollective.co.uk</a>
+                    <h4><br><br>Design<br><br>
+                    Wireframe<br><br>
+                    Copy<br><br>
+                    D3 charts<br><br>
+                    Development<br><br>
+                    <br><br>
+                    <br><br>
+                    Business card design and letterpress printing 
+                    <br><br>
+                    Invoice template design
+                    <br><br>
+                    <br><br>
+                    Tech: HTML, CSS5, Bootstrap, Particles.js, jQuery, SEO</h4>
                 </div>
             </div>
         </section>
 
-        <!-- ============================ Section End ============================== -->
-        <!-- ============================ Section Start ============================ -->
 
-        <section id="three" class="container wow fadeInUp" data-wow-delay="0.5s">
-            <div class="row padding">
-                <div class="col-xs-12 centertext">
-                  <a href="http://chanceencounters.thecollective.co.uk">www.chanceencounters.thecollective.co.uk</a>
-                  <hr class="title">
-              </div>
-
-        <div class="col-md-12">
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                </ol>
-                <ul class="carousel-inner">
-                    <li class="item active">
-                        <img src="img/portfolio/chance/chance.png" alt="First slide"></li>
-            </div>
-                <a class="left carousel-control" href="#carousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control"
-                        href="#carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right">
-                        </span></a>
-                </div> 
-            </div>
-    </div>
-<div id="push">
-</div>
-            </div>
-        </section>
-
-
-        <!-- =============================== Footer ================================ -->
-
+<!-- ============================ Footer ============================ -->
+    <section>
         <footer class="padding">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <a href="index.html" title="Portfolio" title="logo"><img src="img/logo_small.png" alt="Add alt tag"></a>
-                        <h3>Get in Touch</h3>
-                        <p>Berlin // +49 176 355 347 // kirstynandkirstyn@gmail.com</p>
-                        <small>&copy; Copyright 2016 Kirstyn McMullan. All rights reserved.</small>
-                        <hr class="mini central light-grey-dk">
+                        <img src="img/palmbeachlogo.png">
+                        <h3>| DON'T BE A STRANGER | </h3>
+
+                        <h4> kirstynandkirstyn@gmail.com | +49 176 35534787 | The Factory Berlin </h4>
+                        <h4>&copy; 2016 Palm Beach Web Agency </h4>
                     </div>
                 </div>
             </div>
         </footer>
+    </section>
+<!-- ============================ End Footer ============================ -->
 
     <!-- / END page #wrapper -->
     </div>
