@@ -1556,16 +1556,6 @@ blockquote.bigtext {
   transition: all .5s ease;
 }
 
-.hero h1:click {
-  opacity: 0.5;
-  text-decoration: <specialising in> !important;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
 .hero p {
   width: 95%;
   color: #fff;
@@ -4964,4 +4954,15 @@ div.mobilenav{
 img.close-icon{
   margin-top: 7px
 }
+
+/* text spinner */ 
+
+.text-spinner { position: relative; color: transparent; }
+.text-spinner span { position: absolute; top: -1px; left: 0; opacity: 0; transform: translateY(80%); transition: all 0.6s ease-in-out; color: #909499; }
+.text-spinner span.active { transform: translateY(0); opacity: 1; }
+.text-spinner span.away { transform: translateY(-80%); }
+
+
+
+
 
