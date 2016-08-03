@@ -1538,34 +1538,29 @@ blockquote.bigtext {
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 45px;
   width: 95%;
   color: #fff;
   margin: 0 auto 20px;
-  font-family: 'Palm Beach', Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
   text-align: center;
+  vertical-align: middle;
 }
 
-.hero h2{
-  color: #fff;
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.hero h3 {
-  font-size: 40px;
+.hero h2 {
+  font-size: 55px;
   width: 95%;
   color: #fff;
   text-transform: none;
   margin: 0 auto 20px;
-  font-family: 'Palm Beach', Helvetica, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   text-align: center;
+  vertical-align: middle;
 }
 
-.hero h3:hover {
+.hero h2:hover {
   opacity: 0.5;
   text-decoration: line-through !important;
   -webkit-transition: all .5s ease;
@@ -1576,11 +1571,16 @@ blockquote.bigtext {
   transition: all .5s ease;
 }
 
-.hero p {
-  width: 95%;
+.hero h3{
   color: #fff;
-  margin: auto;
+  font-size: 35px;
+  font-family:'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: none;
+  vertical-align: middle;
 }
+
 
 @media (min-width: 768px) {
 
@@ -4848,8 +4848,10 @@ a.icon{
   }
 
 div.mobilenav{
-  font-family: 'courier_newregular';
-  padding-top: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+
+  padding-top: 150px;
 }
 
 /*----------- MOBILE MENU -----------*/
@@ -4978,7 +4980,7 @@ img.close-icon{
 /* text spinner */ 
 
 .text-spinner { position: relative; color: transparent; }
-.text-spinner span { position: absolute; top: -1px; left: 0; opacity: 0; transform: translateY(80%); transition: all 0.6s ease-in-out; color: #fff; }
+.text-spinner span { position: absolute; left: 0; opacity: 0; transform: translateY(80%); transition: all 0.6s ease-in-out; color: #fff; }
 .text-spinner span.active { transform: translateY(0); opacity: 1; }
 .text-spinner span.away { transform: translateY(-80%); }
 
