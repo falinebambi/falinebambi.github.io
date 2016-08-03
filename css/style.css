@@ -1538,18 +1538,38 @@ blockquote.bigtext {
 }
 
 .hero h1 {
-  font-size: 65px;
+  font-size: 40px;
   width: 95%;
   color: #fff;
   margin: 0 auto 20px;
-  font-family: 'Cabin', Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: 'Palm Beach', Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
 }
 
-.hero h1:hover {
+.hero h2{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero h3 {
+  font-size: 40px;
+  width: 95%;
+  color: #fff;
+  text-transform: none;
+  margin: 0 auto 20px;
+  font-family: 'Palm Beach', Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero h3:hover {
   opacity: 0.5;
   text-decoration: line-through !important;
   -webkit-transition: all .5s ease;
+  text-transform: none;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -4858,22 +4878,22 @@ div.mobilenav{
 .top-menu {
     top: 5px;
     width: 25px;
-    height: 2px;
-    border-radius: 10px;
+    height: 4px;
+    border-radius: 6px;
     background-color: #F9A530;
 }
 .mid-menu {
     top: 13px;
     width: 25px;
-    height: 2px;
-    border-radius: 10px;
+    height: 4px;
+    border-radius: 6px;
     background-color: #F9A530;
 }
 .bottom-menu {
     top: 21px;
     width: 25px;
-    height: 2px;
-    border-radius: 10px;
+    height: 4px;
+    border-radius: 6px;
     background-color: #F9A530;
 }
 .menui {
@@ -4958,7 +4978,7 @@ img.close-icon{
 /* text spinner */ 
 
 .text-spinner { position: relative; color: transparent; }
-.text-spinner span { position: absolute; top: -1px; left: 0; opacity: 0; transform: translateY(80%); transition: all 0.6s ease-in-out; color: #909499; }
+.text-spinner span { position: absolute; top: -1px; left: 0; opacity: 0; transform: translateY(80%); transition: all 0.6s ease-in-out; color: #fff; }
 .text-spinner span.active { transform: translateY(0); opacity: 1; }
 .text-spinner span.away { transform: translateY(-80%); }
 
