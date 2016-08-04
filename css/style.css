@@ -161,13 +161,13 @@ h1, h2, h3, h4, h5, h6, p, span, blockquote, hr {
 
 h1 {
   font-family:'palmbeach', Helvetica, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing:2px;
   font-weight: 400;
 }
 
 h2 {
   font-family: 'palmbeach', Helvetica, sans-serif;
-  letter-spacing: -2px;
+  letter-spacing: 2px;
   font-weight: 700;
 }
 
@@ -1549,18 +1549,18 @@ blockquote.bigtext {
 }
 
 .hero h2 {
-  font-size: 55px;
+  font-size: 45px;
   width: 95%;
   color: #fff;
-  text-transform: none;
+  text-transform: uppercase;
   margin: 0 auto 20px;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   vertical-align: middle;
 }
 
-.hero h2:hover {
+/*.hero h2:hover {
   opacity: 0.5;
   text-decoration: line-through !important;
   -webkit-transition: all .5s ease;
@@ -1569,7 +1569,7 @@ blockquote.bigtext {
   -ms-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
-}
+}*/
 
 .hero h3{
   color: #fff;
@@ -1606,6 +1606,19 @@ blockquote.bigtext {
   }
 
 }
+
+.data h2 {
+font-size: 55px;
+  width: 95%;
+  color: #F26F70;
+  text-transform: none;
+  margin: 0 auto 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;}
+
+
 
 /********************************************************/
 /* Home Slider                                          */
