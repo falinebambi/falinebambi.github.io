@@ -1599,13 +1599,13 @@ blockquote.bigtext {
 .hero h2 {
   font-size: 45px;
   width: 95%;
-  color: #fff;
+  color: white;
   /*text-transform: uppercase;*/
   margin: 0 auto 20px;
   font-family: 'Shrikhand',Josefin Sans, sans-serif;
   font-weight: 600;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   vertical-align: middle;
 }
 
@@ -5054,6 +5054,16 @@ img.close-icon{
 
 .btn-danger.btn-outline:hover {
     color: #fff;
+}
+
+
+.wordwrap { 
+   text-align: center;
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
 }
 
 
