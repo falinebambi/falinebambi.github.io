@@ -208,8 +208,8 @@ h4  {
   }
 }
 
-h5 {
-  font-size: 32px;
+h4 {
+  font-size: 24px;
   font-family: 'palmbeach', Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -252,11 +252,11 @@ p a {
 
 a {
   color: #F26F70;
-  font-size: 20px;
-  font-family: 'Shrikhand';
+  font-size: 16px;
+  font-family: 'palmbeach', Helvetica, sans-serif;
   font-weight: 100;
-  letter-spacing: 2px;
   text-decoration: none;
+  text-transform: uppercase;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease .3s;
   -o-transition: all ease .3s;
@@ -4813,9 +4813,10 @@ span.wondering{
 
 
 
-#marchio a{
+#marchio{
   float: left;
-  font-family: 'Shrikhand';
+  margin-top: 27px;
+  font-family: 'Helvetica';
   font-size: 20px;
 }
 
@@ -4825,10 +4826,19 @@ a#menu-icon {
   display: none;
   position: relative;
   float: right;
+  top: 33px;
   right: 60px;
 }
 
-
+a#menu-icon:hover {
+  color: #28d7b1;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
 
 a#menu-icon:active {
   text-decoration: none;
@@ -4893,6 +4903,7 @@ a.icon{
     display: block;
     position: relative;
     float: right;
+    margin-top: 15px;
     z-index: 9999
   }
 
