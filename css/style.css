@@ -208,8 +208,8 @@ h4  {
   }
 }
 
-h4 {
-  font-size: 24px;
+h5 {
+  font-size: 32px;
   font-family: 'palmbeach', Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -251,17 +251,16 @@ p a {
 }
 
 a {
-  color: #F26F70;
-  font-size: 16px;
-  font-family: 'palmbeach', Helvetica, sans-serif;
+  color: white;
+  font-size: 30px;
+  font-family: 'Shrikhand';
   font-weight: 100;
   text-decoration: none;
-  text-transform: uppercase;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease .3s;
   -o-transition: all ease .3s;
   transition: all ease .3s;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 a.textlink {
@@ -274,7 +273,8 @@ a.textlink {
 
 a:hover,
 a:focus {
-  color: #aaa
+  color: white;
+  text-decoration: none;
 }
 
 hr {
@@ -1600,11 +1600,12 @@ blockquote.bigtext {
   font-size: 45px;
   width: 95%;
   color: #fff;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   margin: 0 auto 20px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Shrikhand',Josefin Sans, sans-serif;
   font-weight: 600;
   text-align: center;
+  letter-spacing: 1px;
   vertical-align: middle;
 }
 
@@ -4482,7 +4483,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 .white {
   background-color: #fff;
   border-color: #fff !important
-}*/
+}
 
 /* Black */
 .black {
@@ -4813,11 +4814,8 @@ span.wondering{
 
 
 
-#marchio{
+#marchio a{
   float: left;
-  margin-top: 27px;
-  font-family: 'Helvetica';
-  font-size: 20px;
 }
 
 
@@ -4826,8 +4824,7 @@ a#menu-icon {
   display: none;
   position: relative;
   float: right;
-  top: 33px;
-  right: 60px;
+  right: 30px;
 }
 
 a#menu-icon:hover {
@@ -4903,7 +4900,6 @@ a.icon{
     display: block;
     position: relative;
     float: right;
-    margin-top: 15px;
     z-index: 9999
   }
 
