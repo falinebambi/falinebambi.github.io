@@ -209,14 +209,16 @@ h4  {
 }
 
 h5 {
-  font-size: 32px;
-  font-family: 'palmbeach', Helvetica, sans-serif;
+  font-size: 28px;
+  font-family: 'Shrikhand', Helvetica, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
+  text-align: center;
   color: #F26F70;
-  line-height: 30px}
+  line-height: 30px;
+  letter-spacing: 2px}
 
-h4  {
+
+h5  {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: colored 10s infinite linear;
@@ -2182,6 +2184,7 @@ font-size: 55px;
 #projects .projects .label-text h3 {
   width: 100%;
   white-space: normal;
+  font-family: 'palmbeach', Helvetica, Arial, sans-serif;
   display: table-cell;
   transform: rotate(90deg);
   float: left;
@@ -5057,14 +5060,6 @@ img.close-icon{
 }
 
 
-.wordwrap { 
-   text-align: center;
-   white-space: pre-wrap;      /* CSS3 */   
-   white-space: -moz-pre-wrap; /* Firefox */    
-   white-space: -pre-wrap;     /* Opera <7 */   
-   white-space: -o-pre-wrap;   /* Opera 7 */    
-   word-wrap: break-word;      /* IE */
-}
 
 
 
