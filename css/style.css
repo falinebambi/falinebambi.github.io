@@ -208,13 +208,15 @@ h4  {
   }
 }
 
+
+
 h5 {
-  font-size: 28px;
+  font-size: 32px;
   font-family: 'Shrikhand', Helvetica, sans-serif;
   font-weight: 700;
   text-align: center;
   color: #F26F70;
-  line-height: 30px;
+  line-height: 32px;
   letter-spacing: 2px}
 
 
@@ -253,7 +255,7 @@ p a {
 }
 
 a {
-  color: white;
+  color: inherit;
   font-size: 30px;
   font-family: 'Shrikhand';
   font-weight: 100;
@@ -4877,13 +4879,12 @@ nav ul li{
 
 nav ul li a{
   text-transform: uppercase;
-  text-decoration: none;
   font-size: 11px;
   font-family: 'DINPro-Bold';
 }
 
 nav ul li a:hover{
-  text-decoration: line-through;
+  text-decoration: none;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
   -ms-transition: all .2s ease;
@@ -4891,9 +4892,6 @@ nav ul li a:hover{
   transition: all .2s ease;
 }
 
-.selected {
-  text-decoration: line-through !important;
-}
 
 .white{
   color: #fff
@@ -5018,7 +5016,6 @@ div.mobilenav{
 
 .mobilenav li a:hover {
   opacity: 0.5;
-  text-decoration: line-through !important;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
