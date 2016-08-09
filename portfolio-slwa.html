@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 
@@ -11,7 +12,7 @@
     <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
 
-    <title>Kirstyn McMullan | Portfolio</title><!-- Your page/site title -->
+    <title>Palm Beach Web Agency | Berlin</title><!-- Your page/site title -->
 
     <!-- Load Our CSS - Do not alter the load order -->
     <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
@@ -51,6 +52,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     
+      <script src="js/hamburgler.js"> </script> 
     <!-- Load these in the <head> for quicker IE8+ load times -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -58,191 +60,95 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
+
+
 </head>
 
-<body id="home">
+<body id="home" style="background-image:url('img/portfolio/data/drlogo.png')">
+
+
 
     <!-- Our page loader -->
     <div class="loadstack">
         <div class="spinner"></div>
     </div>
-   <!-- ============================ Main menu, (modal window) ============================ -->
-
-    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
-
-        <!-- Close modal trigger -->
-        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
-            <span class="icon-close"></span>
-        </button>
-
-        <!-- Menu content -->
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div id="menumodalLabel" class="modal-title">
-                        <div class="modaltagline">
-                            <h3>Portfolio of Kirstyn McMullan</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <ul class="row motion">
-                        <li class="col-md-4 col-sm-6 one">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/home.jpg')"></div>
-                            <a href="index.html" title="Home">Home</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 two">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/data.jpg')"></div>
-                            <a href="portfolio-data.html" title="Data Revenue">Data Revenue<span>Front End development // Design </span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 three">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/thesis.jpg')"></div>
-                            <a href="portfolio-thesis.html" title="Masters Thesis">Masters Thesis<span>Research // Photography </span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 four">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/pba.jpg')"></div>
-                            <a href="portfolio-pba.html" title="Premier's Book Award">Premier's Book Award<span> Media Communications // Project Management </span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 five">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/scandi.jpg')"></div>
-                            <a href="portfolio-scand.html" title="Home with Slider Hero">Scandinavan Decor<span> Media Communications // interior design</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 six">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/slwa.jpg')"></div>
-                            <a href="portfolio-slwa.html" title="State Library of Western Australia">State Library of Western Australia<span> Media Communications // Publications</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 seven">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/stray.jpg')"></div>
-                            <a href="portfolio-stray.html" title="Stray Magazine">Stray Magazine<span> Design // Publications</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 nine">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/aaltoliving.jpg')"></div>
-                            <a href="portfolio-aaltoliving.html" title="Aalto Living">Aalto Living<span> Design // Web // Ecommerce</span></a>
-                        </li> 
-                        <li class="col-md-4 col-sm-6 nine">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/scoop.jpg')"></div>
-                            <a href="portfolio-scoop.html" title="Scoop Magazine">Scoop Magazine<span> Publishing </span></a>
-                        </li> 
-                        <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/aalto.jpg')"></div>
-                            <a href="portfolio-.html" title="Aalto Magazine">Aalto Magazine<span> Design // Publications</span></a>
-                        </li>  
-                        <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg" style="background-image: url('img/portfolio/sortable/chance.jpg')"></div>
-                            <a href="portfolio-chance.html" title="Chance Encounter">Chance Encounter<span> Design // Development</span></a>
-                        </li>                          
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <h3>Get in Touch</h3>
-                    <h4>Berlin // +49 176 355 347 // kirstynandkirstyn@gmail.com</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ============================ Main menu, (modal window) ============================ -->
-
-    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
-
-        <!-- Close modal trigger -->
-        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
-            <span class="icon-close"></span>
-        </div>
-    <!-- ============================ End Main Navigation ==================================== -->
-    <!-- ============================ Header/fixed sidebar ============================ -->
-
-    <header id="header">
-        
-        <!-- Main menu toggle -->
-        <button class="toggle" data-toggle="modal" data-target="#menumodal">
-            <span class="menu-bar bar-1"></span>
-            <span class="menu-bar bar-2"></span>
-            <span class="menu-bar bar-3"></span>
-        </button>
-        
-        <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
-        <div class="mobile_logo">
-            <img src="img/logo.png" alt="Logo">
-        </div>
-
-        <!-- Bullet navigation -->
-        <nav id="bullets" class="cover">
-            <ul>
-                <li class="current-page-item"><a href="#wrapper"></a></li>
-                <li><a href="#two"></a></li>
-                <li><a href="#three"></a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
-    <button class="social" data-toggle="modal" data-target="#socialmodal">
-        <span class="icon-share"></span>
-    </button>
     
-    <!-- End header/fixed sidebar -->
+  <!-- NAV -->
+    <nav id="menu" class="">
+        <div class="container">
+            <div class="marchio">
+                <a class=""></a>
+    
+    <!--ul id="menu-list" class="white">
+      <li><a id="services-button" href="#home" class="white ">Home</a></li>
+      <li><a id="portfolio-button" href="#about" class="white ">About</a></li>
+      <li><a id="studio-button" href="#services" class="white ">Services</a></li>
+      <li><a id="projects-button" href="#projects" class="white ">Projects</a></li>
+      <li><a id="contact-button" href="#contact" class="white ">Contact</a></li>
+      <li><a id="contact-button" href="index.html" class="white ">- Palm Beach Web Agency -</a></li>
+    </ul>-->
+    <div class="mobilenav ">
+      <div id="ul_menu">
 
-    <!-- ============================ Start the page content ============================ -->
+        <li class="voce-menu "><a href="index.html">Home</a></li>
+        <li class="voce-menu "><a href="#about">About</a></li>
+        <li class="voce-menu "><a href="#services">Services</a></li>
+        <li class="voce-menu "><a href="#projects">Projects</a></li>
+        <li class="voce-menu "><a href="#contact">Contact</a></li>
+        <li class="voce-menu "><a href="index.html">- Palm Beach Web Agency -</a></li>
+      </div>
+    </div> 
+    <a href="javascript:void(0)" class="icon white "> 
+       <div class="hamburger"> 
+         <div class="menui top-menu" style="background:#fff "></div> 
+         <div class="menui mid-menu" style="background:#fff "></div> 
+         <div class="menui bottom-menu" style="background:#fff "></div> 
+       </div> 
+    </a>
+    </div>
+  </nav>
+    
+        <!-- ============================ Header Start ============================ -->
 
-    <!-- Leading Page Container -->
-    <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
-    <div id="wrapper" class="page-content">
 
-        <!-- ============================ Section Start ============================ -->
-
-        <section class="container-fluid titlebar">
+        <section id="one" class="container-fluid wow fadeInUp" data-wow-delay="0.5s">
             <div class="row">
-                <div class="col-xs-12">
-                    <h3 class="pull-left">Project: Marketing &amp; Communications </h3>
-                    <h3 class="pull-right"><a href="index.html" class="back" title="Back">Back <span class="icon-undo2"></span></a></h3>
+        <div class="col-xs-12 element-img parallax" style="background-image: url('img/portfolio/slwa/hilights-celebrating-125-years-of-the-state-library-of-wa.jpg'); height: 440px">
                 </div>
-            </div>
+    </div>
+<div id="push">              
+              </div>
         </section>
+        <!-- ============================ text Start ============================ -->
 
-        <!-- ============================ Section End ============================== -->
-
-        <!-- ============================ Section Start (Owl Carousel) ============================ -->
-
-        <section class="container-fluid">
+        <section id="project chance" class="container-fluid wow fadeInUp" style= "align:center" data-wow-delay="0.5s">
             <div class="row">
-                <div class="col-xs-12 element-img parallax" style="background-image: url('img/portfolio/slwa/hilights-celebrating-125-years-of-the-state-library-of-wa.jpg'); height: 440px">
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section End ============================== -->
-
-        <!-- ============================ Section Start ============================ -->
-
-        <section id="two" class="container-fluid white">
-            <div class="row">
-                <div class="col-md-8 textpadding">
-                    <h3>State Library of Western Australian - Communications and Marketing</h3>
+                <div class="col-md-10 textpadding centered">
+                    <a>State Library of Western Australian x Department of Culture &amp; Arts</h5>
                     <hr class="mini">
-                    <p>I worked in the Marketing and Communications team of the State Library in its 125th Anniversary year (a year that saw complete rebranding of the Library.) We acted as an in-house Design and Communications agency; overseeing all communications, branding, media and material for the seperate departments (clients) of the State Library. I wrote the Library newsletter and created a brand new design in celebration of the anniversary year, photographed and edited content for the Annual Report and assisted in design and editing of the Better Beginnings packs that are delivered to around 25,000 families a year. I also liaised closely with the media to promote the Library’s history collection and events. </p>
-                </div>
-                <div class="meta col-md-4 textpadding dark-grey-dk wow fadeInRight" data-wow-delay="0.4s">
-                    <h3>Project Meta</h3>
+                    <p>During the 125th Anniversary year of the State Library I worked with the Design and Communications team to rebrand the Library. We oversaw all communications, branding, media, collateral and events for the seperate departments of the State Library. I wrote the Library newsletter and created a brand new design in celebration of the anniversary year, photographed and edited content for the Annual Report and assisted in design and editing of the Better Beginnings packs that are delivered to around 25,000 families a year. I also liaised closely with the media to promote the Library’s history collection and events.
                     <hr class="mini">
-                    <h4>Year: 2014</h4>
-                    <br>
-                    <h4>Task:To assist with communications and design direction for different projects happening through the library departments</h4>
-                    <h4>Skills: Writing, Media, Communications, Public Relations, Photography, Design Direction </h4>
-                    <br>
-                    
+                    <a>Western Australian Premier's Book Award</h5>
+                    <hr class="mini">
+                    <p>In collabortaion with the Department of Culture &amp; Arts the State Library runs the prestigious Western Australian Premier's Book Award. I was resposible for project managing the 2014 cycle. The Awards are the key event in the State Library's calendar, attended by key local literary people and presented by the Premier. I organised and managed the entire Awards cycle from judging process, branding, media, logistics, speech writing and planning the Awards night.
+                    <br> <br>
+                    Writing, Media, Communications, Public Relations, Photography, Design Direction, Event Management, Media, Communications, Public Relations, Design, website
+                    </p>
+                    <hr class="mini">
+                    <a href="http://slwa.wa.gov.au">Visit the Website</h5>
+                    <hr class="mini">
                 </div>
+
             </div>
         </section>
 
-        <!-- ============================ Section End ============================== -->
-        <!-- ============================ Section annual report ============================ -->
+<!-- ============================ Section annual report ============================ -->
 
         <section id="three" class="container wow fadeInUp" "red-lt" data-wow-delay="0.5s">
             <div class="row padding">
                 <div class="col-xs-12 centertext">
-                <a href="http://slwa.wa.gov.au/__data/assets/pdf_file/0010/60985/SLWA_Annual_Report_2013_14WEB2.pdf" >State Library of Western Australian Annual Report<br>
-                  Photographed front cover, design direction &amp; copy editing</a>
+                <a href="http://slwa.wa.gov.au/__data/assets/pdf_file/0010/60985/SLWA_Annual_Report_2013_14WEB2.pdf" >State Library of Western Australian Annual Report</a>
+                  <p>Photographed front cover, design direction &amp; copy editing</p>
                   <hr class="title">
                   <bk>
                   <div class="item"><img src="img/portfolio/slwa/slwa_annual_report.png"></div>
@@ -257,9 +163,9 @@
         <section id="three" class="container wow fadeInUp" "red-lt" data-wow-delay="0.5s">
             <div class="row padding">
                 <div class="col-xs-12 centertext">
-                <a>State Library of Western Australian Connect Newsletter<br>
-                Content, photography, copy editing &amp; redesign of branding </a>
-                  <hr class="title">
+                <a>State Library of Western Australian Connect Newsletter</a>
+                <p>Content, photography, copy editing &amp; redesign of branding </p>
+                <hr class="title">
                   <div class="item"><img src="img/portfolio/slwa/connect_newsletter.png"></div>
                </div>
               </div>
@@ -273,9 +179,8 @@
         <section id="three" class="container wow fadeInUp" "red-lt" data-wow-delay="0.5s">
             <div class="row padding">
                 <div class="col-xs-12 centertext">
-                  <a >Better Beginings - early literacy <br>
-                  Copy editing &amp; design direction for the new literacy packs 
-                  </a>
+                  <a>Better Beginings - early literacy </a>
+                  <p>Copy editing &amp; design direction for the new literacy packs </p>
                   <hr class="title">
                   <div class="item"><img src="img/portfolio/slwa/Better_beginnings_yellow_pack.jpg"></div>
                </div>
@@ -289,8 +194,8 @@
         <section id="three" class="container wow fadeInUp" "red-lt" data-wow-delay="0.5s">
             <div class="row padding">
                 <div class="col-xs-12 centertext">
-                  <a >Memory House exhibition <br>
-                   Installation of show &amp; photography of exhibition</a>
+                  <a> Memory House exhibition </a>
+                  <p> Installation of show &amp; photography of exhibition</p>
                   <hr class="title">
                   <div class="item"><img src="img/portfolio/slwa/memoryhouse_exhibit.png"></div>
                </div>
@@ -299,21 +204,85 @@
         </section>
 
         <!-- ============================ Section End ============================== -->
-        <!-- =============================== Footer ================================ -->
 
+            <!-- ============================ Section Start ============================ -->
+
+        <section id="three" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12 centertext">
+                  <a>Western Australian Premier's Book Award website</a>
+                  <hr class="title">
+                  <div class="item"><img src="img/portfolio/pba/shortlist.jpg"></div>
+               </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="three" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12 centertext">
+                <h3> Press Coverage </h3>
+                <hr class="title">
+                    <p> <a> Offical Library Press Release</a></p>
+                    <p> <a> Offical Goverment Press Release</a></p>
+                    <p> <a> ABC News </a> </p>
+                    <p> <a> Fremantle Press</a></p>
+                    <p> <a> Publisher</a></p>
+                    <p> <a> Random House Publisher</a></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ============================ Section End ============================== -->
+        <!-- ============================ Section Start ============================ -->
+         <section id="three" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 centertext">
+                    <h3>Design for Premier's Book Award</h3>
+                    <hr class="title">
+                    <div class="item"><img src="img/portfolio/pba/peopleschoice.jpg"></div>
+                    <bk>
+                    <div class="item"><img src="img/portfolio/pba/invite.jpg"></div>
+                    <bk>
+            </div>
+        </section>
+        <!-- ============================ Section End ============================== -->
+
+                <!-- ============================ Section Start ============================ -->
+         <section id="three" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="container-fluid">
+                <div class="row padding ">
+                    <div class="col-xs-12 centertext">
+                    <h3>Event Planning for Premier's Book Award</h3>
+                    <hr class="title">
+                    <div class="item"><img src="img/portfolio/pba/awardsnight_1.jpg"></div>
+                    <bk>
+               </div>
+            </div>
+        </section>
+        <!-- ============================ Section End ============================== -->
+
+<!-- ============================ Footer ============================ -->
+    <section>
         <footer class="padding">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <a href="index.html" title="Portfolio" title="logo"><img src="img/logo_small.png" alt="Add alt tag"></a>
-                        <h3>Get in Touch</h3>
-                        <p>Berlin // +49 176 355 347 // kirstynandkirstyn@gmail.com</p>
-                        <small>&copy; Copyright 2016 Kirstyn McMullan. All rights reserved.</small>
-                        <hr class="mini central light-grey-dk">
+                        <img src="img/palmbeachlogo.png">
+                        <h4>DON'T BE A STRANGER</h4>
+
+                        <small> kirstynandkirstyn@gmail.com | +49 176 35534787 | The Factory Berlin <br>
+                        &copy; 2016 Palm Beach Web Agency </small>
                     </div>
                 </div>
             </div>
         </footer>
+    </section>
+<!-- ============================ End Footer ============================ -->
 
     <!-- / END page #wrapper -->
     </div>
