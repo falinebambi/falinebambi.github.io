@@ -2187,8 +2187,14 @@ font-size: 55px;
   display: table-cell;
   transform: rotate(90deg);
   float: left;
-  transform-origin: left top 0;
+  transform-origin: 10% 35%;;
   top: 20px
+  vertical-align: middle;
+}
+
+.label {
+  display: inherit;
+
 }
 
 
