@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+/*  
+ * Designer: Kirstyn McMullan - www.palmbeach.agency 
+ * Last update: 18/08/2016
+ * Copyright (c) Palm Beach Agency (www.palmbeach.agency)
+ * File: css/style-minified.css
+ * Contact: hello@palmbeach.agency
+ */
+
+
 /********************************************************/
 
 
@@ -50,7 +59,6 @@ html {
 
 body {
     font-family: 'Palm Beach', Helvetica;
-    sans-serif;
     background-color: #F3F3F3;
     font-size: 24px;
     font-style: normal;
@@ -402,7 +410,8 @@ ul li span.icon-radio-checked {
     color: inherit;
     margin-right: 9px;
     margin-left: -23px;
-    color: #F26F70 font-weight: 200;
+    color: #F26F70;
+    font-weight: 200;
 }
 
 img {
@@ -1403,10 +1412,11 @@ blockquote.bigtext {
 
 @media (max-width: 450px) {
     .hero h1 {
-        margin: 0 auto
+        margin: 0 auto;
     }
     .hero h2 {
-        margin: 0 auto font-size: 30px;
+        margin: 0 auto;
+        font-size: 30px;
     }
     .hero p {
         display: none;
@@ -1844,8 +1854,8 @@ blockquote.bigtext {
     transform: rotate(90deg);
     float: left;
     transform-origin: 10% 35%;
-    ;
-    top: 20px vertical-align: middle;
+    top: 20px; 
+    vertical-align: middle;
 }
 
 .label {

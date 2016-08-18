@@ -1,0 +1,366 @@
+/********************************************************/
+
+
+/* Background color presets                             */
+
+
+/********************************************************/
+
+
+/* White 
+.white {
+  background-color: #fff;
+  border-color: #fff !important
+}
+
+/* Black */
+
+.black {
+    background-color: #000000;
+    border-color: #FFFED8 !important
+}
+
+
+/* Blue Light */
+
+.blue-lt {
+    background-color: #5D9CEC;
+    border-color: #5D9CEC !important
+}
+
+
+/* Blue Dark */
+
+.blue-dk {
+    background-color: #4A89DC;
+    border-color: #4A89DC !important
+}
+
+
+/* Aqua Light */
+
+.aqua-lt {
+    background-color: #4FC1E9;
+    border-color: #4FC1E9 !important
+}
+
+
+/* Aqua Dark */
+
+.aqua-dk {
+    background-color: #3BAFDA;
+    border-color: #3BAFDA !important
+}
+
+
+/* Mint Light */
+
+.mint-lt {
+    background-color: #48CFAD;
+    border-color: #48CFAD !important
+}
+
+
+/* Mint Dark */
+
+.mint-dk {
+    background-color: #37BC9B;
+    border-color: #37BC9B !important
+}
+
+
+/* Green Light */
+
+.green-lt {
+    background-color: #A0D468;
+    border-color: #A0D468 !important
+}
+
+
+/* Green Dark */
+
+.green-dk {
+    background-color: #8CC152;
+    border-color: #8CC152 !important
+}
+
+
+/* Sunflower Light */
+
+.sunflower-lt {
+    background-color: #FFCE54;
+    border-color: #FFCE54 !important
+}
+
+
+/* Sunflower Dark */
+
+.sunflower-dk {
+    background-color: #F6BB42;
+    border-color: #F6BB42 !important
+}
+
+
+/*  Red Light */
+
+.red-lt {
+    background-color: #ED6D58;
+    border-color: #ED6D58 !important
+}
+
+
+/* Red Dark */
+
+.red-dk {
+    background-color: #E9573F;
+    border-color: #E9573F !important
+}
+
+.red-lt h3,
+h1,
+.red-dk h3,
+.red-lt p,
+.red-dk p,
+.red-lt span,
+.red-dk span {
+    color: #fff;
+}
+
+.red-lt span.number,
+.red-lt span.number {
+    color: #F08978;
+}
+
+
+/* Grapefruit Light */
+
+.grapefruit-lt {
+    background-color: #ED5565;
+    border-color: #ED5565 !important
+}
+
+
+/* Grapefruit Dark */
+
+.grapefruit-dk {
+    background-color: #DA4453;
+    border-color: #DA4453 !important
+}
+
+
+/* Lavender Light */
+
+.lavender-lt {
+    background-color: #AC92EC;
+    border-color: #AC92EC !important
+}
+
+
+/* Lavender Dark */
+
+.lavender-dk {
+    background-color: #967ADC;
+    border-color: #967ADC !important
+}
+
+
+/* Rose Light */
+
+.rose-lt {
+    background-color: #EC87C0;
+    border-color: #EC87C0 !important
+}
+
+
+/* Rose Dark */
+
+.rose-dk {
+    background-color: #D770AD;
+    border-color: #D770AD !important
+}
+
+
+/* Light-grey Light */
+
+.light-grey-lt {
+    background-color: #F3F3F3;
+    border-color: #F3F3F3 !important
+}
+
+
+/* Light-grey Dark */
+
+.light-grey-dk {
+    background-color: #E6E9ED;
+    border-color: #E6E9ED !important
+}
+
+
+/* Dark-grey Light */
+
+.dark-grey-lt {
+    background-color: #555555;
+    border-color: #555555 !important
+}
+
+
+/* Dark-grey Dark */
+
+.dark-grey-dk {
+    background-color: #333333;
+    border-color: #333333 !important
+}
+
+.dark-grey-lt p,
+.dark-grey-dk p,
+.dark-grey-lt h4,
+.dark-grey-dk h4,
+.dark-grey-lt span,
+.dark-grey-dk span {
+    color: #999999
+}
+
+
+/* Navy Light */
+
+.navy-lt {
+    background-color: #4b4667;
+    border-color: #4b4667 !important
+}
+
+
+/* Navy Dark */
+
+.navy-dk {
+    background-color: #3f3b55;
+    border-color: #3f3b55 !important
+}
+
+
+/* Electric Light */
+
+.electric-lt {
+    background-color: #3FD8DF;
+    border-color: #3FD8DF !important
+}
+
+
+/* Electric Dark */
+
+.electric-dk {
+    background-color: #37c3c9;
+    border-color: #37c3c9 !important
+}
+
+
+/* Turquoise Light */
+
+.turquoise-lt {
+    background-color: #E2F9FF;
+    border-color: #E2F9FF !important
+}
+
+
+/* Turquoise Dark */
+
+.turquoise-dk {
+    background-color: #D0EDF5;
+    border-color: #D0EDF5 !important
+}
+
+
+/* Orange Light */
+
+.orange-lt {
+    background-color: #F8991C;
+    border-color: #F8991C !important
+}
+
+
+/* Orange Dark */
+
+.orange-dk {
+    background-color: #e19229;
+    border-color: #e19229 !important
+}
+
+
+/* Purple Light */
+
+.purple-lt {
+    background-color: #B15FDC;
+    border-color: #B15FDC !important
+}
+
+
+/* Purple Dark */
+
+.purple-dk {
+    background-color: #994ec0;
+    border-color: #994ec0 !important
+}
+
+
+/* Pink-lt */
+
+.pink-lt {
+    background-color: #E52D7B;
+    border-color: #E52D7B !important
+}
+
+
+/* Pink-dk */
+
+.pink-dk {
+    background-color: #CD246C;
+    border-color: #CD246C !important
+}
+
+
+/* Beige Light */
+
+.beige-lt {
+    background-color: #FFFED8;
+    border-color: #FFFED8 !important
+}
+
+
+/* Beige Dark */
+
+.beige-dk {
+    background-color: #f3f2ca;
+    border-color: #f3f2ca !important
+}
+
+
+/* Tan Light */
+
+.tan-lt {
+    background-color: #AE895D;
+    border-color: #AE895D !important
+}
+
+
+/* Tan Dark */
+
+.tan-dk {
+    background-color: #997850;
+    border-color: #997850 !important
+}
+
+
+/* Gold */
+
+.gold-lt {
+    background-color: #AA9A66;
+    border-color: #AA9A66 !important
+}
+
+
+/* Gold */
+
+.gold-dk {
+    background-color: #968859;
+    border-color: #968859 !important
+}
+
