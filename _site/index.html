@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!---
+
+                                `./+/:.                     ./oydmmmmdys/-
+                             `+dNMMMMNdo.               -omNMMMMMMMMMMMMNms:`
+                            .hNMNNMMNMMMm+`           :yNMMMMMMMMMNmNMMMMMMNd/`
+                           .hmm++dNydNMMMMh.        .sNMMMMMMMMMMMMmyhNMNNMMMMd-
+                          `+-.:- :::ohNmNMMd.      -mMMMMMMMNNdydhhyh+omNdyodMMN+`
+                          -  ..-.`..`./hdNMMh`    :mMMMMMMMd/+s//-`..-.////:-yNNNo`
+                          /` ``` ``` ``-/mMMMs   .NMMMMMMMNh::-.`..```....-:- /:smo
+                         ..           `.-yNMMm- `hMMMMMmoo/ -`.`    ````` `.:..``-y:``
+                         `              `-+mMMs /NMMNyss/-.` `             `-.`.  `s``
+                   `.-:/+oooo++/-.``     `-odMm.hMMMm+.`.`    `.. -:: -.`` `. ``  +.
+               `:oydmNMMMMMMMMMMNNmhs+:.  ``oNN+MMm+:.```./oyhdmNNNNNNNNmmdyo/-``  -.
+            ./ymNMNMMMMNyNMMMMMMMMMMMMNmho:.-sNmMMN+ -+ydNMMMMMMMMMMMMMMMMMMMMNdy/-``
+         `-smNMMMddMMMN/hMMNmMMMNdMMmNMMMMNmyyNMMMNhdNMMMMMMMMMMMMMMNdNMMMMMMMNmNNmh+-`
+       `/hmdNNMMN+NNmNs:NMdshNNd+oshsdmNMMMMMMMMMMMMMMMMMMMMMNddNMMMMmsdNddmMMMmydMMMds/.
+     `/hNMsomyNNs+++yo:+/h++oy/o.+oNmdmNMMMMMMMMMMMMMMMMmhysso+/+yhyydy/s+//o+oss+sNNmyoyo-`
+   ./yNMNm-:oo/y-/.://./-++/ohyddmNMMMMMMMMMMMMMMMMMMMMMNmdyo/-....:::-/.:-.-....-://++/:sds:`
+`./hs:ss+:`::/`s:-...../sdmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmds+:.```.`.````````.`..-../-+o/.
+`./:`...:` ..-`+:.`-+hmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMNmho:.``            `.``` `-//-`
+ -.  `-`:```````-ohNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMhmMMMMMMMMMMMNmh/.`                   `...
+      . `    .:yNMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMMmmNMMMMMMMNNMNmNMMMMMMMMMMMmy/`
+           `/hNMMMMMMMMMMMMMMMMMMNmNMMMMMMMMMMMN+oNMMMMMMMMMMNyhymNMMdmMMMMMMNd+.
+         `/hNMMMMNNMMMNNmMMMMMMMmmMMMMMMMMMMMMMh+NMMMMMMMMMMMMNd/+ohys+mMMMNMMMMd/`
+        -yNMNMMNysNddossmMMMMMMNNNMMMMMMMMNNNms.yMMMMMMMMMMMMMMMh+:+:.-/NNMhyNMMMNs`
+      `/mMMddNNs-/o:oomNMNNNNNNdMMMMMMMMMN+h+:.`:dNNNmhmmMMMMmNMMN+:-...++dmsomNNNMs`
+     .yNMNssmys:/o/sdNMMMddmysymMMMMMMMMdm/:..`  `-::../hMMMMmomMMNy.``...::+:/++:+m/`
+   `/dNNm///:-./:/+NMMMMMmym/+yMMMMMMNMMmos-``        . -mMNMMo:mMMMh-`` .`.`..-..`-s`
+ `.smho/..-.```-o+dMMMMMMd+/+oMMMMMMMymMm++/.`        ``./myMMy -hMMMd:       `. `` :
+ :+:` `` .`` `.:oNMMNhMMN::/:dMMMMMMMN+hoo::.`         `../dMMd` .mMMMN:            `
+            `-/+mMMMNoNm/::-/dMMMMMMMMm/+:-`           ``.+mmNd`  -dMMMd:
+            `..+MMMMMoy:.:`:mMMMMMMMMMm/:-` `          ``.-+smd`   `dMMMm:
+             `-yMMNMNs+.:.`sMMMMMMmymNo/.:```           `.:::yd`    -mMMMm.
+            `::dMdyNy:::`.`dMMMMMMh-.//-.`.`            .-.-.md`     :mMMMd`
+            +-.hMmoy -..``ommMMMNhN/-..-.              ` `.``hh       /NMMMh.
+           `-.:yMN:: -` ``s+hNMMMsh:-...`               ``   oy       `hMMMNy`
+           ..-.+MM: -.`  ./+sMMMNo++.-`.`                    +y        -mMMMN:
+           `-:`:Mm-.`.`  `.-mMNNmo+//..``                    -y         :MMMMd.
+            .-`-d+```      -hodMy/::- ``                      /.        `dMMMMh`
+             ```o`  `     `/-.dMN/-:.```                       `         +MMMMM+
+              `.-         -/`-dMMh-.`                                    .mMMMMh`
+               `.         `-.oMMMy-.-.                                    :NMMMN/
+                .          .`:NMMy`.```                                    yMMMMd`
+                ``         ```yMMs ```                                     +MMMMMo
+                              -mho                                         -NMMMMd`
+                               :s-`                                        `mMMMMN:
+                                -..                                         sMMMMMo
+                                  ``                                        -NMMMMh
+                                   `                                        `mMMMMM-
+                                                                             mMMMMMo
+                                                                             mMMMMMd`
+                                                                             hMMMMMm`
+                                                                             oMMMMMd`
+                                                                             +MMMMMd`
+                                                                             oMMMMMm.
+                                                                             yMMMMMN-
+                                                                             mMMMMMM-
+                                                                            `NMMMMMM:
+                                                                            -NMMMMMM-
+                                                                            -NMMMMMN.
+                                                                            /NMMMMMh
+                                                                           `yMMMMMMm`
+                                                                           -NMMMMMMN.
+                                                                           sMMMMMMMM:
+                                                                           NMMMMMMMM+
+                                                                          .MMMMMMMMMo
+                                                                          -MMMMMMMMMo
+                                                                          -MMMMMMMMM+
+                                                                          -MMMMMMMMN-
+                                                                          `MMMMMMMMd`
+                                                                           yhhhhhhh:
+          _____                    _____                    _____            _____
+         /\    \                  /\    \                  /\    \          /\    \
+        /::\    \                /::\    \                /::\____\        /::\____\
+       /::::\    \              /::::\    \              /:::/    /       /::::|   |
+      /::::::\    \            /::::::\    \            /:::/    /       /:::::|   |
+     /:::/\:::\    \          /:::/\:::\    \          /:::/    /       /::::::|   |
+    /:::/__\:::\    \        /:::/__\:::\    \        /:::/    /       /:::/|::|   |
+   /::::\   \:::\    \      /::::\   \:::\    \      /:::/    /       /:::/ |::|   |
+  /::::::\   \:::\    \    /::::::\   \:::\    \    /:::/    /       /:::/  |::|___|______
+ /:::/\:::\   \:::\____\  /:::/\:::\   \:::\    \  /:::/    /       /:::/   |::::::::\    \
+/:::/  \:::\   \:::|    |/:::/  \:::\   \:::\____\/:::/____/       /:::/    |:::::::::\____\
+\::/    \:::\  /:::|____|\::/    \:::\  /:::/    /\:::\    \       \::/    / ~~~~~/:::/    /
+ \/_____/\:::\/:::/    /  \/____/ \:::\/:::/    /  \:::\    \       \/____/      /:::/    /
+          \::::::/    /            \::::::/    /    \:::\    \                  /:::/    /
+           \::::/    /              \::::/    /      \:::\    \                /:::/    /
+            \::/____/               /:::/    /        \:::\    \              /:::/    /
+             ~~                    /:::/    /          \:::\    \            /:::/    /
+                                  /:::/    /            \:::\    \          /:::/    /
+                                 /:::/    /              \:::\____\        /:::/    /
+                                 \::/    /                \::/    /        \::/    /
+                                  \/____/                  \/____/          \/____/
+
+           _____                    _____                    _____                    _____                    _____
+         /\    \                  /\    \                  /\    \                  /\    \                  /\    \
+        /::\    \                /::\    \                /::\    \                /::\    \                /::\____\
+       /::::\    \              /::::\    \              /::::\    \              /::::\    \              /:::/    /
+      /::::::\    \            /::::::\    \            /::::::\    \            /::::::\    \            /:::/    /
+     /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/    /
+    /:::/__\:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/  \:::\    \        /:::/____/
+   /::::\   \:::\    \      /::::\   \:::\    \      /::::\   \:::\    \      /:::/    \:::\    \      /::::\    \
+  /::::::\   \:::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \    /:::/    / \:::\    \    /::::::\    \   _____
+ /:::/\:::\   \:::\ ___\  /:::/\:::\   \:::\    \  /:::/\:::\   \:::\    \  /:::/    /   \:::\    \  /:::/\:::\    \ /\    \
+/:::/__\:::\   \:::|    |/:::/__\:::\   \:::\____\/:::/  \:::\   \:::\____\/:::/____/     \:::\____\/:::/  \:::\    /::\____\
+\:::\   \:::\  /:::|____|\:::\   \:::\   \::/    /\::/    \:::\  /:::/    /\:::\    \      \::/    /\::/    \:::\  /:::/    /
+ \:::\   \:::\/:::/    /  \:::\   \:::\   \/____/  \/____/ \:::\/:::/    /  \:::\    \      \/____/  \/____/ \:::\/:::/    /
+  \:::\   \::::::/    /    \:::\   \:::\    \               \::::::/    /    \:::\    \                       \::::::/    /
+   \:::\   \::::/    /      \:::\   \:::\____\               \::::/    /      \:::\    \                       \::::/    /
+    \:::\  /:::/    /        \:::\   \::/    /               /:::/    /        \:::\    \                      /:::/    /
+     \:::\/:::/    /          \:::\   \/____/               /:::/    /          \:::\    \                    /:::/    /
+      \::::::/    /            \:::\    \                  /:::/    /            \:::\    \                  /:::/    /
+       \::::/    /              \:::\____\                /:::/    /              \:::\____\                /:::/    /
+        \::/____/                \::/    /                \::/    /                \::/    /                \::/    /
+         ~~                       \/____/                  \/____/                  \/____/                  \/____/
+                                                                                                                             -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<!-- Disable horrible auto-skype for contact numbers in IE -->
+<meta name="description" content="Palm Beach is a Berlin based Web agency specialising in Web Design, Front End Development &amp; Publishing">
+<meta name="author" content="Palm Beach Agency">
+<meta name="keywords" content="berlin, web, designer, design, developer, front end developer, websites, code, agency, digital, creative, web page">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<!-- Favicon, (always keep in root of folder) -->
+<title>Palm Beach Web Agency | Berlin</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/icomoon.css" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300,600" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+<!--[if IE]>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+<!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="js/hamburgler.js">
+</script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+<body id="home">
+    <div class="loadstack">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="menu" class="">
+        <div class="container">
+            <div class="marchio">
+                <a class=""></a>
+
+                <!--ul id="menu-list" class="white">
+      <li><a id="services-button" href="#home" class="white ">Home</a></li>
+      <li><a id="portfolio-button" href="#about" class="white ">About</a></li>
+      <li><a id="studio-button" href="#services" class="white ">Services</a></li>
+      <li><a id="projects-button" href="#projects" class="white ">Projects</a></li>
+      <li><a id="contact-button" href="#contact" class="white ">Contact</a></li>
+      <li><a id="contact-button" href="index.html" class="white ">- Palm Beach Web Agency -</a></li>
+    </ul>-->
+                <div class="mobilenav ">
+                    <div id="ul_menu">
+
+                        <li class="voce-menu "><a href="index.html">Home</a></li>
+                        <li class="voce-menu "><a href="#about">About</a></li>
+                        <li class="voce-menu "><a href="#services">Services</a></li>
+                        <li class="voce-menu "><a href="#projects">Projects</a></li>
+                        <li class="voce-menu "><a href="#contact">Contact</a></li>
+                        <li class="voce-menu "><a href="index.html">- Palm Beach Web Agency -</a></li>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="icon white ">
+                    <div class="hamburger">
+                        <div class="menui top-menu" style="background:#fff "></div>
+                        <div class="menui mid-menu" style="background:#fff "></div>
+                        <div class="menui bottom-menu" style="background:#fff "></div>
+                    </div>
+                </a>
+            </div>
+          </div>
+    </nav>
+
+    <!-- ============================ Section one: hero ============================ -->
+    <section id="intro" class="herofade hero cover element-img" style="background-image: url(img/pb-logo.png),url(img/hero.jpg); background-position: center center, 50% 50%, top left; background-origin: border-box, content-box, border-box; background-repeat: no-repeat; ">
+        <div class="overlay pink"></div>
+        <div class="tagline">
+            <h2 class="wow fadeInUp" data-wow-delay="0.7s">We are Palm Beach a <br>Berlin based creative web agency.</h2>
+        </div>
+    </section>
+    <!-- ============================ Section two: intro ============================ -->
+
+    <section id="about" class="container wow fadeInUp scrollreceive " data-wow-delay="0.5s ">
+        <div class="row padding ">
+            <div class="col-xs-12 ">
+                <h3 class="title-left wow fadeInUp ">Good design makes us tick...</h3>
+                <p>We believe good design should transcend the occasional to be part of the everyday, that's why we are taking over the online world one site at a time to bring a little more user happiness into every experience. <br>
+                    <br> We specialising in design &amp; front end development which means we can take you from UX &amp; wireframes through to development &amp; deploy to get that baby online.<br>
+                    <br>Just to make sure we keep in touch with the offline world we sometimes hit up sexy printed projects &amp; have experience in letterpress business cards, cool printing techniques, artists zines &amp; magazine production. <br>
+                    <br>If you have a project in mind don't be stranger and get in touch.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ============================ SECTION SERVICES ============================ -->
+
+
+    <section class="container-fluid red-it ">
+        <div class="row">
+            <div id="services" class="row">
+                <div class="col-md-6 element-img " style="background-image: url( 'img/konczakowski.tumblr.com.gif'); height: 568px "></div>
+                <div class="col-md-6 textpadding wow fadeInLeft " data-wow-delay="0.5s ">
+                    <h3 class="title-left wow fadeInUp">Services</h3>
+                    <p class="wow fadeInUp">
+                        <span class="service">
+            <span id="service1">Concept </span><span class="strike">: art direction, identity, creative thinking, </span><br>
+                        <span class="strike"> branding strategy, colour, style and approach </span>
+                        </span><span class="strike"></span><br>
+                        <span class="strike">lots of questions</span>
+
+                        <span class="service">
+            <span id="service2">UI/UX </span><span class="strike">: User experience,</span><br>
+                        <span class="strike">interaction, usability, wireframing, prototyping</span><br>
+                        <span class="strike"></span>
+                        </span><span class="strike">advs design</span>
+
+                        <span class="service">
+            <span id="service3">Content </span><span class="strike">: curated content, web strategy,</span><br>
+                        <span class="strike">SEO optimised copy, graphics, icons, image sourcing</span><br>
+
+                        </span>
+                        <span class="strike">social</span>
+
+                        <span class="service">
+            <span id="service4">Design</span> <span class="strike">:photoshop, illustrator, sketch, </span><br>
+                        <span class="strike">design-led outcomes, responsive, interactive</span><br>
+                        </span>
+                        <span class="strike">Social media management</span>
+                        <span class="service">
+            <span id="service5">Development</span> <br> <span class="strike">: HTML5, CSS3, JavaScript, jQuery, </span><br>
+                        <span class="strike"> React Native, CMS, email marketing campaigns</span><br>
+                        <span class="strike"> jQuery,API integrations, Google Analytics</span><br>
+
+                        </span>
+                        <span class="strike">social</span>
+
+                        <span class="service">
+            <span id="service6">Printed </span><span class="strike">: letterpress cards, layouts, design,</span><br>
+                        <span class="strike"> zines, magazines</span></span>
+                    </p>
+
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <!-- ============================ Section three: latest projects ============================ -->
+
+    <section class="container-fluid red-it">
+        <div class="row">
+            <div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
+                <h3 class="title-left wow fadeInUp ">Fresh on the press</h3> <br>
+                <p><span class="glyphicon glyphicon-fire"></span> UI Design and Front-end engineering for CloudPeeps<br><br>
+                    <span class="glyphicon glyphicon-fire"></span> Website rebranding for Solar Bar Berlin in colab w/ Battalion Agency<br> <br>
+                    <span class="glyphicon glyphicon-fire"></span> Email campaign for record label RMXRBN<br><br>
+                    <span class="glyphicon glyphicon-fire"></span> Event website for Chance Encounter held by The Collective<br><br>
+                    <span class="glyphicon glyphicon-fire"></span> We are developing a hybrid app that helps you choose the best airfiltering house plants and keep them alive. Because not killing plants make us better people.</p>
+            </div>
+            <div class="col-md-6 element-img" style="background-image: url('img/collage.png'); height: 568px "></div>
+        </div>
+    </section>
+
+
+    <!-- ============================ Section: Projects ============================= -->
+
+    <div id="projects" class="container-fluid">
+
+        <div class="row padding">
+            <div class="col-xs-12 centertext">
+                <h5> We create intuitive experiences, come see... </h5> <br>
+
+                <div class="col-xs-12 padding">
+                    <!-- Titlebar -->
+                    <div class="container-fluid sortlinks">
+                        <ul class="filters">
+                            <li>
+                                <p class="filter active" data-filter="all">All </p></li>
+                            <li>
+                                <p class="filter" data-filter="online">Online</p>
+                            </li>
+                            <li>
+                                <p class="filter" data-filter="offline">Offline</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="projects online" data-cat="online">
+                    <div class="projects-wrapper">
+                        <img src="img/portfolio/sortable/chance.jpg" alt="Chance Encounters" />
+                        <div class="label">
+                            <div class="label-text">
+                                <h3> <a href="portfolio-chance.html" title="Chance Encounters">Chance Encounters</a></h3>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects online" data-cat="online">
+                    <div class="projects-wrapper">
+                        <img src="img/portfolio/sortable/data.jpg" alt="Add alt tag" />
+                        <div class="label">
+                            <div class="label-text">
+                                <h3><a href="portfolio-data.html" title="View Item">Data <br>Revenue </a></h3>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects online" data-cat="online">
+                    <div class="projects-wrapper">
+                        <img src="img/portfolio/sortable/scandi.jpg" alt="Add alt tag" />
+                        <div class="label">
+                            <div class="label-text">
+                                <h3><a href="portfolio-scand.html" title="View Item">SCANDINAVIAN Decor</a></h3>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects offline" data-cat="offline">
+                    <div class="projects-wrapper">
+                        <img src="img/portfolio/sortable/slwa.jpg" alt="Add alt tag" />
+                        <div class="label">
+                            <div class="label-text">
+                                <h3><a href="portfolio-slwa.html" title="SLWA">SLWA</a></h3>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects offline" data-cat="offline">
+                    <div class="projects-wrapper">
+                        <img src="img/portfolio/sortable/stray.jpg" alt="Add alt tag" />
+                        <div class="label">
+                            <div class="label-text">
+                                <h3><a href="portfolio-stray.html" title="View Item">Stray Magazine </a></h3>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects offline" data-cat="offline">
+                    <div class="projects-wrapper">
+                        <img src="img/portfolio/sortable/aalto.jpg" alt="Add alt tag" />
+                        <div class="label">
+                            <div class="label-text">
+                                <h3><a href="portfolio-aalto.html" title="View Item">Aalto Magazine</a></h3>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects online" data-cat="online">
+                    <div class="projects-wrapper">
+                        <img src="img/portfolio/sortable/aaltoliving.jpg" alt="Add alt tag" />
+                        <div class="label">
+                            <div class="label-text">
+                                <h3><a href="portfolio-aaltoliving.html" title="View Item">Aalto <br>Living</a></h3>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects offline" data-cat="offline">
+                    <div class="projects-wrapper">
+                        <img src="img/portfolio/sortable/scoop.jpg" alt="Add alt tag" />
+                        <div class="label">
+                            <div class="label-text">
+                                <h3><a href="portfolio-scoop.html" title="View Item">Scoop Publishing</a></h3>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .close-row -->
+        </div>
+        <!-- / .container-fluid -->
+    </div>
+
+
+
+
+    <!-- ============================ Footer ============================ -->
+    <section>
+        <footer id="contact" class="padding ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xs-12 ">
+                        <img src="img/palmbeachlogo.png" alt="palmbeach"/>
+                        <h4>DON'T BE A STRANGER</h4>
+
+                        <h4> hello@palmbeach.agency | +49 176 35534787 <br> The Factory Berlin </h4>
+                        <small> 2016 Palm Beach Web Agency </small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- ============================ End Footer ============================ -->
+    <!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
+
+    <script src="js/bootstrap.min.js "></script>
+    <!-- Bootstrap core - always load first -->
+    <script src="js/wow.min.js "></script>
+    <!-- WoW animations -->
+    <script src="js/jquery.nav.js "></script>
+    <!-- Left-hand bullet navigation -->
+    <script src="js/jquery.nicescroll.min.js "></script>
+    <!-- Scrollbars for whole page and main navigation -->
+    <script src="js/jquery.counterup.min.js "></script>
+    <!-- counterup plugin for increasing page stats -->
+    <script src="js/waypoints.min.js "></script>
+    <!-- Waypoints, needed for 'counterup' plugin -->
+    <script src="js/jquery.fitvids.js "></script>
+    <!-- Fitvids plugin, (responsive videos) -->
+    <script src="js/jquery.flexslider-min.js "></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.easing.min.js "></script>
+    <!-- Easing plugin, for opacity fade on menu background images, image animations-->
+    <script src="js/scripts.js "></script>
+    <!-- Custom JS functions - always load last -->
+    <script src="js/jquery.mixitup.min.js "></script>
+    <!-- MixItUp plugin - for sortable portfolio -->
+    <script src="js/main.js "></script>
+
+    <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->
+
+
+    <!-- Initialize MixItUp plugin -->
+
+    <script>
+        $(function() {
+            var filterList = {
+                init: function() {
+
+                    $('#projects').mixitup({
+                        targetSelector: '.projects',
+                        filterSelector: '.filter',
+                        effects: ['fade'],
+                        easing: 'snap',
+                        // call the hover effect
+                        onMixEnd: filterList.hoverEffect()
+                    });
+
+                },
+
+                hoverEffect: function() {
+                    // Hover Effect
+                    $('#projects .projects').hover(
+                        function() {
+                            $(this).find('.label').stop().animate({
+                                opacity: 0.8
+                            }, 200, 'easeOutQuad');
+                            $(this).find('.label-text h3').stop().animate({
+                                top: 0
+                            }, 200, 'easeOutQuad');
+                        },
+                        function() {
+                            $(this).find('.label').stop().animate({
+                                opacity: 0
+                            }, 200, 'easeInQuad');
+                            $(this).find('.label-text h3').stop().animate({
+                                top: '20px'
+                            }, 200, 'easeInQuad');
+                        }
+                    );
+                }
+
+            };
+            filterList.init();
+        });
+    </script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+    <!-- Initialize fitvids.js plugin for responsive videos -->
+    <script>
+        $(document).ready(function() {
+            $(".fitvids ").fitVids();
+        });
+    </script>
+
+    <!-- Teamimonials Carousel -->
+    <script>
+        $(document).ready(function() {
+            $('#testo-carousel').carousel({
+                pauseOnHover: true,
+                interval: 4000,
+            });
+        });
+    </script>
+
+    <!-- Initialize flexslider for blogfeed slider -->
+    <script>
+        // second-flexslider
+        $(window).load(function() {
+            $('#blogslider').flexslider({
+                animation: "slide ",
+                directionNav: false,
+                controlNav: false,
+                touch: false,
+                slideshow: false
+            });
+        });
+        $('.prev, .next').on('click', function() {
+            var href = $(this).attr('href');
+            $('#blogslider').flexslider(href)
+            return false;
+        })
+    </script>
+
+    <!-- ========== Insert your Google Analytics code below this line ========== -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76210836-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- ======================== End Google Analytics ========================= -->
+
+</body>
+
+</html>
