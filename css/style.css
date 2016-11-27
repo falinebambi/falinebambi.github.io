@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/*  
- * Designer: Kirstyn McMullan - www.palmbeach.agency 
+/*
+ * Designer: Kirstyn McMullan - www.palmbeach.agency
  * Last update: 18/08/2016
  * Copyright (c) Palm Beach Agency (www.palmbeach.agency)
  * File: css/style-minified.css
@@ -1362,7 +1362,7 @@ blockquote.bigtext {
 }
 
 .hero h2 {
-    font-size: 50px;
+    font-size: 5em;
     width: 95%;
     color: white;
     /*text-transform: uppercase;*/
@@ -1595,7 +1595,7 @@ blockquote.bigtext {
 
 /********************************************************/
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  *  v1.3.3
  */
@@ -1633,7 +1633,7 @@ blockquote.bigtext {
     -o-transition: height 500ms ease-in-out;
     transition: height 500ms ease-in-out;
 }
-    
+
 .owl-carousel .owl-item{
     float: left;
 }
@@ -1651,7 +1651,7 @@ blockquote.bigtext {
 }
 
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(../img/grabbing.png) 8 8, move;
 }
 
@@ -1854,7 +1854,7 @@ blockquote.bigtext {
     transform: rotate(90deg);
     float: left;
     transform-origin: 10% 35%;
-    top: 20px; 
+    top: 20px;
     vertical-align: middle;
 }
 
@@ -4306,7 +4306,7 @@ span.wondering {
 a#menu-icon {
     color: #484848;
     display: none;
-    position: relative;
+    position: absolute;;
     float: right;
     right: 30px;
 }
@@ -4588,13 +4588,13 @@ position:relative;
 z-index:50;
 }
 
-/* 
- * Wallpaper v3.1.18 - 2014-06-16 
- * A jQuery plugin for smooth-scaling image and video backgrounds. Part of the Formstone Library. 
- * http://formstone.it/wallpaper/ 
- * 
- * Copyright 2014 Ben Plum; MIT Licensed 
- */ 
+/*
+ * Wallpaper v3.1.18 - 2014-06-16
+ * A jQuery plugin for smooth-scaling image and video backgrounds. Part of the Formstone Library.
+ * http://formstone.it/wallpaper/
+ *
+ * Copyright 2014 Ben Plum; MIT Licensed
+ */
 
     .wallpaper,
     .wallpaper .wallpaper-container,
@@ -4654,5 +4654,3 @@ span.number {
   -ms-behavior: url(includes/backgroundsize.min.htc);
   behavior: url(includes/backgroundsize.min.htc);
 }
-
-
