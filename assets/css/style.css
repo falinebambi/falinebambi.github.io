@@ -4,38 +4,62 @@
  * hello@palmbeach.agency
  */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
-@import url(../fonts/DINCompPro-Light.ttf);
-@import url(../fonts/Proxima Nova Light.otf);
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../fonts/BebasNeueBold.woff);
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(../fonts/ProximaNova-Light.woff);
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: url(../fonts/DINCompPro-Light.woff);
+}
 
 * {
 	margin: 0;
 	padding: 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'DIN', sans-serif;
 }
 
 body {
 	background: #fff;
-	font-size: 16px;
 	margin: 0;
-	color: #a0a0a0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'DINCompPro-Light',Helvetica, sans-serif;
+h2, h3, h4, h5, h6 {
+  font-family: 'Proxima Nova', Helvetica, sans-serif;
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+h1 {
+	font-family: 'BebasNeue', Helvetica, sans-serif;
+}
+
+h2 {
+	color: white;
+	font-size: 2em;
+}
+
+h3 {
+	color: white;
+	font-size: 1.2em;
+  padding-top: 6%;
+	padding-bottom: 6%;
 }
 
 p {
 	padding: 0;
 	margin-bottom: 12px;
-  font-family: 'Proxima Nova Light',Lato, sans-serif;
+  font-family: 'Proxima Nova', Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 1em;
+	font-size: 20px;
 	line-height: 26px;
-	color: #8b8b8b;
-	margin-top: 10px;
+	color: #fff;
 }
 
 html,
@@ -56,7 +80,10 @@ body {
 .mb {margin-bottom: 50px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
+.pt {padding-top: 50px;}
+.pt2 {padding-top: 60px;}
 .ptb {padding-top: 80px; padding-bottom: 80px;}
+.ptbs {padding-top: 10%; padding-left: 1%; padding-right: 5%;}
 
 .clear {
 	clear: both;
@@ -103,6 +130,11 @@ a:focus {
   color:#02C4C2;
 }
 
+.navbar-inverse .navbar-brand {
+    color: white;
+		text-transform: uppercase;
+	}
+
 .navbar-inverse {
 	background: #0d0e10;
 	border-color: #0d0e10;
@@ -114,6 +146,8 @@ a:focus {
 
 .navbar-brand {
 	margin-top: -5px;
+	display: inline-flex;
+
 }
 
 .navbar-nav {
@@ -164,60 +198,50 @@ input {
 	padding: 15px 20px 17px;
 }
 
-.btn-book {
-	background-color: #02C4C2;
-	border-radius: 0px;
-	font-size: 14px;
-	padding: 17px 30px 20px;
-	text-transform: uppercase;
-	font-family: 'Proxima Nova Light', helvetica;
+.carousel,
+.item,
+.active {
+    height: 100%;
 }
 
-.btn-book:hover {
-	background-color: transparent;
-	border-color: #02C4C2;
+.carousel-inner {
+    height: 100%;
 }
 
+/* Background images are set within the HTML using inline CSS, not here */
 
-#h {
-	background-color: #0d0e10;
-	padding: 100px;
-	padding-top: 200px;
-	text-align:center;
-	img-attachment: relative;
-	img-position: center center;
-	min-height: 800px;
-	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+    -o-background-size: cover;
 }
 
-.effect img.image{
-	max-width: 90%;
-	margin-right: 0px
+.carousel-caption img {
+  max-width: 50%;
 }
 
-.effect:hover img.image{
-	display:none;
-	margin-right: 0px
+@media (max-width: 545px){
+.carousel-caption img {
+  max-width: 100%;
 }
-
-.effect img.hover{
-	display:none;
-	margin-right: 0px
+#intro h2, p{
+  text-align: center;
 }
-
-.effect:hover img.hover{
-	display:block;
-	margin-right: 0px
+#intro img{
+  padding-left: 150%;
+  padding-bottom: 50%;
+}
+#intro p {
+  margin-left: 2%;
+}
+#white h1 {
+  margin-top: 20%;
+  margin-left: 15%;
+}
 }
 
 .day-night{
@@ -226,33 +250,391 @@ input {
 	padding-bottom: 50px;
 }
 
-#membership {
-	background-image: url(../img/bedford_reception.jpg);
-	img-attachment: relative;
-	img-position: center center;
-	width: 100%;
+.logo-header {
+  max-width: 60%
+}
+
+#intro {
+	background-color: #000;
+	color: #fff;
+	padding: 5%;
+}
+
+#intro  .col-md-5 {
+	padding-left: 0;
+}
+
+#intro h2 {
+	margin-top: 0;
+}
+
+#intro img {
+	margin-top: -20px;
+}
+
+@media (min-width: 545px){
+#intro p {
+    margin-left: -2%;
+}}
+
+#white {
+	background-color: #fff;
+	color: #000;
+}
+
+
+#white h1{
+  font-size: 12em;
+  transform: rotate(270deg);
+  margin-top: 45%;
+}
+
+#white p {
+  margin-bottom: 20px;
+}
+
+#white .image {
+  margin-left: 6%;
+}
+
+#black {
+	background-color: #000;
+	color: #fff;
+}
+
+#black h1{
+  font-size: 12em;
+  transform: rotate(270deg);
+  margin-top: 45%;
+}
+
+#black p {
+  margin-bottom: 20px;
+}
+
+#black .image {
+  margin-left: 6%;
+}
+
+.image {
+ max-width: 100%;
+}
+
+.logo {
+  max-width: 80px;
+  margin-right: 7%
+}
+
+.icon {
+	max-width: 100px;
+}
+
+.pin {
+	max-width: 100px;
+}
+
+
+.cbp-popup-prev {
+    background: url("../img/cbp-sprite.png") no-repeat scroll -2px -94px transparent;
+    width: 44px;
+    height: 44px;
+    top: 30px;
+    left: 0;
+    margin: auto;
+    right: 108px;
+}
+
+
+.cbp-popup-next {
+    /* @editable properties */
+    background: url("../img/cbp-sprite.png") no-repeat scroll -48px -94px transparent;
+    width: 44px;
+    height: 44px;
+    top: 30px;
+    right: 0;
+    margin: auto;
+    left: 108px;
+    outline: none;
+}
+
+
+#location {
+	background-image: url(../img/location_map.png);
+	background-color: #EFEFEF;
+	background-size: 100% 100%;
 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
 }
 
-.membership-graphic {
-	margin-top: -400px;
-}
-.membership h1, p {
-	color: white;
+#location p {
+	color: #000;
 }
 
-#rates h1, p {
-	color: white;
+.location-details {
+	margin-bottom: 17%;
+  padding-left: 3%;
 }
+
+.location-cta {
+	margin-top: 12%;
+  background-color: white;
+  padding: 2%;
+  max-width: 225px;
+}
+
+.testimonials-block {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.logo-footer {
+  max-width: 130px;
+  margin-top: 10%;
+}
+
+.footer a{
+  color: white;
+  font-family: 'DIN';
+  font-size: 16px;
+}
+
+.footer .footer-links li a {
+    transition: all .1s ease;
+    display: inline-block;
+    color: rgba(255,255,255,.6);
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+.footer p {
+  font-size: 16px;
+}
+
+.footer .footer-contact address {
+    margin-bottom: 30px;
+    font-family: 'DIN';
+}
+
+.footer .copyright {
+    font-size: .8125rem;
+    position: relative;
+    margin-top: 60px;
+}
+
+.footer .copyright p {
+    padding-right: 10px;
+}
+
+.footer .copyright a, .footer .copyright a:active, .footer .copyright a:visited, .footer .copyright p {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0;
+}
+
+@media (min-width: 768px){
+.footer .copyright p, .footer .copyright ul {
+    display: inline-block;
+}}
+
+
+
+
+blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
+    text-align: left;
+}
+
+@media (min-width: 993px) {
+.section {
+    padding: 100px 0;
+}
+}
+
+@media (min-width: 769px){
+.section {
+    padding: 80px 0;
+}
+}
+
+@media (min-width: 545px){
+.section {
+    padding: 60px 0;
+}
+}
+
+.section {
+    padding: 60px 0;
+		display: block;
+}
+
+
+
+.testimonials-block .section-header h2 {
+    color: #00ACAA;
+    text-align: left;
+    padding-left: 17%;
+}
+
+.avatar img{
+  max-width: 100px;
+  padding-top: 80%;
+}
+
+.testimonials-block blockquote {
+    background-color: #00ACAA;
+    position: relative;
+    text-align: center;
+		border: none;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    padding: 0 40px;
+    margin: 40px 0 0;
+}
+
+.testimonials-block blockquote:after {
+    bottom: -15px;
+    right: 15px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+.testimonials-block blockquote:after {
+    bottom: -20px;
+    right: 20px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+}
+
+@media (min-width: 768px) {
+.testimonials-block blockquote:before {
+    top: -20px;
+    left: 20px;
+}
+}
+
+@media (min-width: 768px) {
+.testimonials-block blockquote:after, .testimonials-block blockquote:before {
+    width: 52px;
+    height: 36px;
+    background-size: 52px 36px;
+}
+}
+.testimonials-block blockquote:before {
+    top: -15px;
+    left: 15px;
+}
+
+
+
+@media (min-width: 992px){
+.testimonials-block cite:before {
+    left: 152px;
+    top: -1px;
+}
+}
+@media (min-width: 768px){
+.testimonials-block cite:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 0;
+    border-color: #00aca9 transparent transparent;
+    position: absolute;
+    left: 132px;
+    top: -1px;
+}
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.testimonials-block cite {
+    position: relative;
+    display: block;
+    z-index: 1;
+    padding: 20px 0 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.testimonials-block blockquote .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px){
+.testimonials-block blockquote .inner {
+    height: 200px;
+    padding: 0;
+}}
+
+@media (min-width: 992px){
+.testimonials-block cite img {
+    width: 112px;
+    height: 130px;
+    margin: 0 20px;
+}
+}
+@media (min-width: 768px){
+.testimonials-block cite img {
+    display: inline;
+    float: left;}
+}
+
+@media (min-width: 992px){
+.testimonials-block cite .cite {
+    padding-top: 48px;
+}}
+@media (min-width: 768px){
+.testimonials-block cite .cite {
+    padding-top: 40px;
+    line-height: 1.4;
+}}
+
+@media (min-width: 768px){
+.testimonials-block cite .cite span {
+    display: block;
+}}
+
+.testimonials-block cite span {
+    color: rgba(255,255,255,.65);
+		text-align: left;
+}
+.testimonials-block cite {
+		text-align: left;
+}
+
+@media (min-width: 992px){
+.footer .footer-contact {
+    color: #fff;
+    margin-top: 2%;
+    text-align: right;
+}}
+
+.footer {
+    background-color: #252729;
+    padding: 100px 0;
+		color: #000;
+    font-family: 'DIN', helvetica;
+}
+
+
+
+
 
 .table > thead > tr > th {
 	border-bottom: 1px solid #444;
@@ -274,9 +656,7 @@ th {
 	background-color: #0d0e10;
 }
 
-.partners h1{
-	color: white;
-}
+
 
 #partners p, body{
 	color: #a0a0a0;
@@ -301,19 +681,11 @@ th {
     background-size: cover;
 }
 
-.book h1{
-	color: white;
-}
-
-
-
-
-
 h4 {
-	font-size: 20px;
+	font-size: 3em;
+  font-family: 'BebasNeue';
 	letter-spacing: 1px;
-	line-height: 28px;
-	color: #a0a0a0;
+	color: #000;
 }
 
 h5 {
@@ -324,34 +696,43 @@ i {
 	font-size: 50px;
 }
 
-.footer {
-	padding: 50px;
-	background-color: #F7F7F7;
-	padding-left: 10%;
-}
-
-.footer p{
-	color: #a0a0a0;
-}
-
 .ion-ios-checkmark-outline {
 	font-size: 35px;
 	text-align: center;
 	color: #02C4C2;
 }
 
-.btn-available {
-	background-color: #02C4C2;
+.btn-book {
+	background-color: #FF4350;
+	color: #fff;
 	border-radius: 0px;
-	font-size: 24px;
-	padding: 20px;
+	border-width: medium;
+  margin-top: 6%;
+	font-size: 22px;
 	text-transform: uppercase;
-	font-family: 'Proxima Nova Light', helvetica;
+	font-family: 'Proxima Nova', helvetica;
 }
 
-.btn-available:hover {
+.btn-book:hover {
 	background-color: transparent;
-	border-color: #02C4C2;
+	border-color: #FF4350;
+	color: #FF4350;
+}
+
+.btn-discover {
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+	border-radius: 0px;
+	border-width: 2px;
+	text-transform: uppercase;
+	font-family: 'Proxima Nova Light', helvetica;
+  margin-bottom: 10%;
+}
+
+.btn-discover:hover {
+	background-color: #fff;
+	color: #000;
 }
 
 /* OVERFLOW */

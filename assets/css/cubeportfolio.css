@@ -3549,7 +3549,7 @@
 /* set width and height for items */
 .cbp-l-grid-fullScreen .cbp-item {
     /* @editable properties */
-    width: 50%;
+    width: 100%;
     height: 100%
 }
 /*  END - layout grid full screen */
