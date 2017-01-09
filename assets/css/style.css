@@ -57,8 +57,8 @@ p {
 	margin-bottom: 12px;
   font-family: 'Proxima Nova', Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 20px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 20px;
 	color: #fff;
 }
 
@@ -75,7 +75,7 @@ body {
 	display: block;
 	clear: both;
 }
-.centered {text-align: center}
+.centered {text-align: center; margin: 0 auto;}
 .mt {margin-top: 50px;}
 .mb {margin-bottom: 50px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
@@ -224,10 +224,19 @@ input {
   max-width: 50%;
 }
 
-.icon {
-  max-width: 200px;
+
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
 }
 
+.carousel-indicators .active {
+  width: 8px;
+  height: 8px;
+}
+
+/*mobile*/
 @media (max-width: 545px){
 p{
   margin: 10px;
@@ -248,42 +257,83 @@ p{
 #white h1{
   font-size: 12em;
   transform: none;
-  margin-top: 25%;
+  margin-top: 15%;
   text-align: center;
 }
 #black h1{
   font-size: 12em;
   transform: none;
-  margin-top: 25%;
+  margin-top: 15%;
   text-align: center;
+}
+.icon {
+  max-width: 320px;
 }
 .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   width: auto;
-  height: 250px;
+  height: auto;
 }
 h4 {
   text-align: center;
+}
+#location {
+	background-image: url(../img/location_map.png);
+	background-color: #EFEFEF;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.location-details {
+	text-align: center;
+}
+
+.location-cta {
+	text-align: center;
+  margin-top: 1%;
+  background-color: transparent;;
+  padding: 0%;
+  max-width: auto;
 }
 .testimonials-block blockquote {
     background-color: #00ACAA;
     position: relative;
     text-align: center;
     border: none;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
     padding: 20px 40px;
     margin: 40px 20px 20px;
 }
 
-.avatar img{
-  max-width: 100px;
-  padding-top: 0px;
+.testimonials-block blockquote:after {
+    bottom: -15px;
+    right: 15px;
+    transform: rotate(180deg);
 }
+
+.testimonials-block cite img {
+    width: 92px;
+    height: 110px;
+    margin: 0 auto 5px;
+    display: block;
+}
+
+.testimonials-block cite {
+    position: relative;
+    display: block;
+    z-index: 1;
+    padding: 20px 0 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+}
+
 footer {
   text-align: center;
 }
 }
-
 
 .logo-header {
   max-width: 60%
@@ -304,9 +354,9 @@ footer {
 }
 
 #intro img {
-	margin-top: -20px;
+	max-width: 60px;
 }
-
+/*desktop*/
 @media (min-width: 545px){
 #intro p {
     margin-left: -2%;
@@ -321,6 +371,46 @@ footer {
   transform: rotate(270deg);
   margin-top: 45%;
 }
+#white p {
+  margin-bottom: 20px;
+  padding-top: 120px;
+}
+#black p {
+  margin-bottom: 20px;
+  padding-top: 120px;
+}
+.icon {
+  max-width: 370px;
+}
+#location {
+	background-image: url(../img/location_map.png);
+	background-color: #EFEFEF;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.location-cta {
+	margin-top: 12%;
+  background-color: white;
+  padding: 2%;
+  max-width: 225px;
+}
+.testimonials-block cite span {
+    color: rgba(255,255,255,.65);
+		text-align: left;
+}
+.testimonials-block cite {
+		text-align: left;
+}
+
+}
+
+.testimonials-block * {
+  color: white;
 }
 
 #white {
@@ -329,9 +419,7 @@ footer {
 }
 
 
-#white p {
-  margin-bottom: 20px;
-}
+
 
 #white .image {
   margin-left: 6%;
@@ -387,42 +475,11 @@ footer {
     outline: none;
 }
 
-
-#location {
-	background-image: url(../img/location_map.png);
-	background-color: #EFEFEF;
-	background-size: 100% 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+#location h2 {
+  color: black;
 }
 
 #location p {
-	color: #000;
-}
-
-#location-mobile {
-	background-image: url(../img/location_map_mobile.png);
-	background-color: #EFEFEF;
-	background-size: 100% 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-}
-
-#location-mobile p {
 	color: #000;
 }
 
@@ -431,16 +488,9 @@ footer {
   padding-left: 3%;
 }
 
-.location-cta {
-	margin-top: 12%;
-  background-color: white;
-  padding: 2%;
-  max-width: 225px;
-}
-
 .testimonials-block {
     position: relative;
-    background-color: #fff;
+    background-color: #02C4C2;
     overflow: hidden;
 }
 
@@ -527,10 +577,13 @@ blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
 
 
 .testimonials-block .section-header h2 {
-    color: #00ACAA;
+    color: white;
     text-align: left;
     padding-left: 17%;
 }
+
+
+
 
 
 @media (min-width: 768px) {
@@ -544,8 +597,6 @@ blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
       position: relative;
       text-align: center;
   		border: none;
-      border-radius: 20px;
-      border-bottom-left-radius: 0px;
       padding: 0 40px;
       margin: 40px 0 0;
   }
@@ -581,40 +632,18 @@ blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
     top: -15px;
     left: 15px;
 }
-
-
-
-@media (min-width: 992px){
-.testimonials-block cite:before {
-    left: 152px;
-    top: -1px;
-}
-}
-@media (min-width: 768px){
-.testimonials-block cite:before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 25px 25px 0 0;
-    border-color: #00aca9 transparent transparent;
+.testimonials-block blockquote:after, .testimonials-block blockquote:before {
     position: absolute;
-    left: 132px;
-    top: -1px;
+    content: " ";
+    width: 42px;
+    height: 26px;
+    background-image: url(../img/quote-mark.svg);
+    background-repeat: no-repeat;
+    background-size: 42px 26px;
 }
-}
+
 *, ::after, ::before {
     box-sizing: inherit;
-}
-
-.testimonials-block cite {
-    position: relative;
-    display: block;
-    z-index: 1;
-    padding: 20px 0 0;
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
 }
 
 .testimonials-block blockquote .inner {
@@ -656,13 +685,6 @@ blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
     display: block;
 }}
 
-.testimonials-block cite span {
-    color: rgba(255,255,255,.65);
-		text-align: left;
-}
-.testimonials-block cite {
-		text-align: left;
-}
 
 @media (min-width: 992px){
 .footer .footer-contact {
@@ -754,7 +776,7 @@ i {
 	border-radius: 0px;
 	border-width: medium;
   margin-top: 6%;
-	font-size: 22px;
+	font-size: 1.2em;
 	text-transform: uppercase;
 	font-family: 'Proxima Nova', helvetica;
 }
@@ -766,13 +788,15 @@ i {
 }
 
 .btn-discover {
+  font-size: 1.2em;
+  font-weight: 300px;
 	background-color: transparent;
 	border-color: #fff;
 	color: #fff;
 	border-radius: 0px;
 	border-width: 2px;
 	text-transform: uppercase;
-	font-family: 'Proxima Nova Light', helvetica;
+	font-family: 'Proxima Nova', helvetica;
   margin-bottom: 10%;
 }
 
