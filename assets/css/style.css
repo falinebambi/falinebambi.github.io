@@ -236,10 +236,44 @@ input {
   height: 8px;
 }
 
+.logo-header {
+  max-width: 60%
+}
+
+#intro {
+	background-color: #000;
+	color: #fff;
+	padding: 5%;
+}
+
+#intro  .col-md-5 {
+	padding-left: 0;
+}
+
+#intro h2 {
+	margin-top: 0;
+}
+
+#intro img {
+	max-width: 60px;
+}
+
+
+
 /*mobile*/
-@media (max-width: 545px){
-p{
-  margin: 10px;
+@media (max-width: 1198px){
+  .col-sm-12, .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width:auto;
+  }
+#white p{
+  margin-top: 5%;
+}
+#black p{
+  margin-top: 5%;
 }
 .carousel-caption img {
   max-width: 100%;
@@ -257,13 +291,13 @@ p{
 #white h1{
   font-size: 12em;
   transform: none;
-  margin-top: 15%;
+  margin-top: 5%;
   text-align: center;
 }
 #black h1{
   font-size: 12em;
   transform: none;
-  margin-top: 15%;
+  margin-top: 5%;
   text-align: center;
 }
 .icon {
@@ -335,29 +369,11 @@ footer {
 }
 }
 
-.logo-header {
-  max-width: 60%
-}
-
-#intro {
-	background-color: #000;
-	color: #fff;
-	padding: 5%;
-}
-
-#intro  .col-md-5 {
-	padding-left: 0;
-}
-
-#intro h2 {
-	margin-top: 0;
-}
-
-#intro img {
-	max-width: 60px;
+.col-md-6 {
+  float: inherit;
 }
 /*desktop*/
-@media (min-width: 545px){
+@media (min-width: 1199px){
 #intro p {
     margin-left: -2%;
 }
