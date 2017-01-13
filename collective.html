@@ -14,13 +14,10 @@ hello@palmbeach.agency
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="assets/img/favicon.ico">
-
     <title>The Collective - Members Club</title>
-
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="assets/css/cubeportfolio.css" />
     <link href="assets/css/custom-animations.css" rel="stylesheet">
 
@@ -37,15 +34,13 @@ hello@palmbeach.agency
 </head>
 
 <body style="background-color:#EFEFEF">
-    <header id="Carousel1" class="carousel slide auto">
-        <!-- Indicators -->
+    <header id="Carousel1" class="carousel slide auto carousel-move">
         <ol class="carousel-indicators">
             <li data-target="#Carousel1" data-slide-to="0" class="active"></li>
             <li data-target="#Carousel1" data-slide-to="1"></li>
             <li data-target="#Carousel1" data-slide-to="2"></li>
             <li data-target="#Carousel1" data-slide-to="3"></li>
         </ol>
-        <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="carousel-caption">
                 <img class="logo-header" src="assets/img/Logo Members Club.png">
@@ -53,19 +48,15 @@ hello@palmbeach.agency
                 <button class='btn btn-lg btn-discover'>APPLY NOW</button>
             </div>
             <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('assets/img/IMG_1502.jpg');"></div>
             </div>
             <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('assets/img/IMG_1473.jpg');"></div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('assets/img/IMG_1798.jpg');"></div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('assets/img/Lobby area.jpg');"></div>
             </div>
         </div>
@@ -94,9 +85,9 @@ hello@palmbeach.agency
                 <img class="icon img-responsive centered" src="assets/img/Icons_1.png" alt="coffee community bar">
             </div>
             <div class="col-lg-6 col-sm-12">
-                <div id="CarouselWork" class="carousel slide">
+                <div id="CarouselWork" class="carousel slide carousel-pause">
                     <ol class="carousel-indicators">
-                        <li data-target="#CarouselWork" data-slide-to="0"></li>
+                        <li data-target="#CarouselWork" data-slide-to="0" class="active"></li>
                         <li data-target="#CarouselWork" data-slide-to="1"></li>
                         <li data-target="#CarouselWork" data-slide-to="2"></li>
                         <li data-target="#CarouselWork" data-slide-to="3"></li>
@@ -137,7 +128,7 @@ hello@palmbeach.agency
                 <img class="icon img-responsive centered" src="assets/img/Icons_2.png" alt="meetings co-working event space">
             </div>
             <div class="col-lg-6 col-sm-12">
-                <div id="CarouselPlay" class="carousel slide">
+                <div id="CarouselPlay" class="carousel slide carousel-pause" >
                     <ol class="carousel-indicators">
                         <li data-target="#CarouselPlay" data-slide-to="0" class="active"></li>
                         <li data-target="#CarouselPlay" data-slide-to="1"></li>
@@ -277,12 +268,6 @@ hello@palmbeach.agency
         </div>
     </footer>
 
-
-
-
-
-
-
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/retina-1.1.0.js"></script>
@@ -292,9 +277,12 @@ hello@palmbeach.agency
 
     <!-- Activate the Carousel-->
     <script>
-        $('.carousel').carousel({
-            interval: 5000 //changes the speed
+        $('.carousel-move').carousel({
+            interval: 2500
         })
+        $('.carousel-pause').carousel({
+            interval: false
+        });
     </script>
 
     <!-- Swipe Carousel left right on mobile-->
@@ -314,9 +302,5 @@ hello@palmbeach.agency
             });
         });
     </script>
-
-
-
 </body>
-
 </html>
