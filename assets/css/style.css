@@ -75,7 +75,7 @@ body {
 	display: block;
 	clear: both;
 }
-.centered {text-align: center; margin: 0 auto;}
+.centered {text-align: center;}
 .mt {margin-top: 50px;}
 .mb {margin-bottom: 50px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
@@ -258,24 +258,19 @@ input {
 	max-width: 60px;
 }
 
-
-@media (min-width: 768px)
-.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: inherit;
-}
-
 /*mobile*/
-@media (max-width: 1198px){
-  .col-sm-12, .col-md-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width:auto;
-  }
+@media (max-width: 1199px){
 
+#white h1 {
+  text-align: center;
+  font-size: 6em;
+}
 #white p{
   margin-top: 5%;
+}
+#black h1 {
+  text-align: center;
+  font-size: 6em;
 }
 #black p{
   margin-top: 5%;
@@ -293,20 +288,9 @@ input {
 #intro p {
   margin-left: 2%;
 }
-#white h1{
-  font-size: 12em;
-  transform: none;
-  margin-top: 5%;
-  text-align: center;
-}
-#black h1{
-  font-size: 12em;
-  transform: none;
-  margin-top: 5%;
-  text-align: center;
-}
 .icon {
   max-width: 320px;
+  margin: 0 auto;
 }
 .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   width: auto;
@@ -368,14 +352,18 @@ h4 {
     font-style: normal;
     font-weight: 700;
 }
-
+.testimonials-block .section-header h2 {
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
 footer {
   text-align: center;
 }
 }
 
 /*desktop*/
-@media (min-width: 1199px){
+@media (min-width: 1200px){
 #intro p {
     margin-left: -2%;
 }
@@ -391,11 +379,11 @@ footer {
 }
 #white p {
   margin-bottom: 20px;
-  padding-top: 120px;
+  padding-top: 12%;
 }
 #black p {
   margin-bottom: 20px;
-  padding-top: 120px;
+  padding-top: 12%;
 }
 .icon {
   max-width: 370px;
@@ -417,6 +405,11 @@ footer {
   padding: 2%;
   max-width: 225px;
 }
+.testimonials-block .section-header h2 {
+    color: white;
+    text-align: left;
+    padding-left: 17%;
+}
 .testimonials-block cite span {
     color: rgba(255,255,255,.65);
 		text-align: left;
@@ -424,6 +417,7 @@ footer {
 .testimonials-block cite {
 		text-align: left;
 }
+
 
 }
 
@@ -437,7 +431,10 @@ footer {
 }
 
 
-
+#white p {
+  margin: 5%;
+  margin-bottom: 20px;
+}
 
 #white .image {
   margin-left: 6%;
@@ -449,6 +446,7 @@ footer {
 }
 
 #black p {
+  margin: 5%;
   margin-bottom: 20px;
 }
 
@@ -495,10 +493,17 @@ footer {
 
 #location h2 {
   color: black;
+  padding-bottom: 5%;
 }
 
 #location p {
 	color: #000;
+}
+
+#location b {
+  color:#FF4350;
+  font-size: 2em;
+  padding: 2%;
 }
 
 .location-details {
@@ -592,13 +597,6 @@ blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
 		display: block;
 }
 
-
-
-.testimonials-block .section-header h2 {
-    color: white;
-    text-align: left;
-    padding-left: 17%;
-}
 
 
 
@@ -794,6 +792,7 @@ i {
 	border-radius: 0px;
 	border-width: medium;
   margin-top: 6%;
+  padding: 11px 65px;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	font-family: 'Proxima Nova', helvetica;
