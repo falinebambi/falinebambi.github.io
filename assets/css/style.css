@@ -423,23 +423,23 @@ footer {
 #black h1{
   font-size: 12em;
   transform: rotate(270deg);
-  margin-top: 45%;
+  margin-top: 15%;
 }
 #white h1{
   font-size: 12em;
   transform: rotate(270deg);
-  margin-top: 45%;
+  margin-top: 15%;
 }
 #white p {
   margin-bottom: 20px;
-  padding-top: 12%;
+  padding-top: 22%;
 }
 #black p {
   margin-bottom: 20px;
-  padding-top: 12%;
+  padding-top: 22%;
 }
 .icon {
-  max-width: 370px;
+  max-width: 280px;
 }
 #location {
 	background-image: url(../img/location_map.png);
