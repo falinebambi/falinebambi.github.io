@@ -261,6 +261,24 @@ input {
 /*mobile*/
 @media (max-width: 1199px){
 
+  .btn-discover {
+    font-size: 1.2em;
+    font-weight: 300px;
+  	background-color: transparent;
+  	border-color: #fff;
+  	color: #fff;
+  	border-radius: 0px;
+  	border-width: 2px;
+  	text-transform: uppercase;
+  	font-family: 'Proxima Nova', helvetica;
+    margin-bottom: 10%;
+  }
+
+  .btn-discover:hover {
+  	background-color: #fff;
+  	color: #000;
+  }
+
 #white h1 {
   text-align: center;
   font-size: 6em;
@@ -279,7 +297,7 @@ input {
   max-width: 100%;
 }
 .carousel-caption {
-    bottom: 20%;
+    bottom: 12%;
 }
 #intro h2, p{
   text-align: center;
@@ -365,6 +383,12 @@ h4 {
 }
 footer {
   text-align: center;
+  background-color: #252729;
+  padding: 50px 0;
+  color: #000;
+  font-family: 'DIN', helvetica;
+  }
+
 }
 }
 
