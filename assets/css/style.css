@@ -279,6 +279,24 @@ input {
   	color: #000;
   }
 
+  .btn-book {
+  	background-color: #FF4350;
+  	color: #fff;
+  	border-radius: 0px;
+  	border-width: medium;
+    margin-top: 6%;
+    padding: 11px 65px;
+  	font-size: 1.2em;
+  	text-transform: uppercase;
+  	font-family: 'Proxima Nova', helvetica;
+  }
+
+  .btn-book:hover {
+  	background-color: transparent;
+  	border-color: #FF4350;
+  	color: #FF4350;
+  }
+
 #white h1 {
   text-align: center;
   font-size: 6em;
@@ -323,7 +341,6 @@ h4 {
 #location {
 	background-image: url(../img/location_map.png);
 	background-color: #EFEFEF;
-  width: 100%;
   height: auto;
   background-position: center;
   -webkit-background-size: cover;
@@ -392,6 +409,12 @@ footer {
 }
 }
 
+#black h1{
+  font-size: 12em;
+  transform: rotate(270deg);
+  margin-top: 45%;
+}
+
 /*desktop*/
 @media (min-width: 1200px){
 #intro p {
@@ -421,7 +444,6 @@ footer {
 #location {
 	background-image: url(../img/location_map.png);
 	background-color: #EFEFEF;
-  width: 100%;
   height: auto;
   background-position: center;
   -webkit-background-size: cover;
