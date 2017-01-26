@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/*  
- * Designer: Kirstyn McMullan - www.palmbeach.agency 
+/*
+ * Designer: Kirstyn McMullan - www.palmbeach.agency
  * Last update: 18/08/2016
  * Copyright (c) Palm Beach Agency (www.palmbeach.agency)
  * File: css/style-minified.css
@@ -69,89 +69,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-/* PRE LOADER */
-
-.loadstack {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #1f1f1f;
-    z-index: 99996;
-    height: 100%;
-    width: 100%;
-    overflow: hidden !important;
-}
-
-.spinner {
-    width: 100px;
-    height: 100px;
-    margin: 100px auto;
-    background-color: #eee;
-    border-radius: 100%;
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -50px;
-    -webkit-animation: scaleout 1.0s infinite ease-in-out;
-    -moz-animation: scaleout 1.0s infinite ease-in-out;
-    -ms-animation: scaleout 1.0s infinite ease-in-out;
-    -o-animation: scaleout 1.0s infinite ease-in-out;
-    animation: scaleout 1.0s infinite ease-in-out;
-}
-
-@-webkit-keyframes scaleout {
-    0% {
-        -webkit-transform: scale(0.0);
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: scale(1.0);
-    }
-}
-
-@-moz-keyframes scaleout {
-    0% {
-        -moz-transform: scale(0.0);
-    }
-    100% {
-        opacity: 0;
-        -moz-transform: scale(1.0);
-    }
-}
-
-@-ms-keyframes scaleout {
-    0% {
-        -ms-transform: scale(0.0);
-    }
-    100% {
-        opacity: 0;
-        -ms-transform: scale(1.0);
-    }
-}
-
-@-o-keyframes scaleout {
-    0% {
-        -o-transform: scale(0.0);
-    }
-    100% {
-        opacity: 0;
-        -o-transform: scale(1.0);
-    }
-}
-
-@keyframes scaleout {
-    0% {
-        transform: scale(0.0);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(1.0);
-    }
-}
+.centered {text-align: center;}
+.mt {margin-top: 50px;}
+.mb {margin-bottom: 50px;}
+.mtb {margin-top: 50px; margin-bottom: 50px;}
+.mtb2 { margin-top: 100px; margin-bottom: 100px;}
+.pt {padding-top: 50px;}
+.pt2 {padding-top: 60px;}
+.ptb {padding-top: 80px; padding-bottom: 80px;}
+.ptbs {padding-top: 10%; padding-left: 1%; padding-right: 5%;}
 
 
 /* Fixes IE 10 viewport issue, as specified in Bootstrap docs.
@@ -225,7 +151,7 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 14px;
     font-family: 'palmbeach', Helvetica, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -1362,8 +1288,8 @@ blockquote.bigtext {
 }
 
 .hero h2 {
-    font-size: 50px;
-    width: 95%;
+    font-size: 3.5em;
+    width: 90%;
     color: white;
     /*text-transform: uppercase;*/
     margin: 0 auto 20px;
@@ -1595,7 +1521,7 @@ blockquote.bigtext {
 
 /********************************************************/
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  *  v1.3.3
  */
@@ -1633,7 +1559,7 @@ blockquote.bigtext {
     -o-transition: height 500ms ease-in-out;
     transition: height 500ms ease-in-out;
 }
-    
+
 .owl-carousel .owl-item{
     float: left;
 }
@@ -1651,7 +1577,7 @@ blockquote.bigtext {
 }
 
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(../img/grabbing.png) 8 8, move;
 }
 
@@ -1854,7 +1780,7 @@ blockquote.bigtext {
     transform: rotate(90deg);
     float: left;
     transform-origin: 10% 35%;
-    top: 20px; 
+    top: 20px;
     vertical-align: middle;
 }
 
@@ -2391,12 +2317,15 @@ span.icon-at {
 /********************************************************/
 
 footer {
-    text-align: center;
-    background-color: #444
+  margin-top: 10%;
 }
 
 footer .padding {
     padding: 10px 0
+}
+
+footer h4 {
+  text-align: center;
 }
 
 footer p {
@@ -2406,7 +2335,7 @@ footer p {
 
 footer small {
     font-size: 13px;
-    font-family: 'palmbeach', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -4308,7 +4237,7 @@ a#menu-icon {
     display: none;
     position: relative;
     float: right;
-    right: 30px;
+    right: 0px;
 }
 
 a#menu-icon:hover {
@@ -4377,7 +4306,6 @@ nav ul li a:hover {
 
 a.icon {
     display: block;
-    position: relative;
     float: right;
     z-index: 9999
 }
@@ -4442,10 +4370,12 @@ div.mobilenav {
 }
 
 .menui {
+
     background: #000;
     transition: 0.6s ease;
     transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
-    margin-top: 10px;
+    margin-top: 50%;
+    margin-left: 50%;
     position: absolute;
 }
 
@@ -4588,13 +4518,13 @@ position:relative;
 z-index:50;
 }
 
-/* 
- * Wallpaper v3.1.18 - 2014-06-16 
- * A jQuery plugin for smooth-scaling image and video backgrounds. Part of the Formstone Library. 
- * http://formstone.it/wallpaper/ 
- * 
- * Copyright 2014 Ben Plum; MIT Licensed 
- */ 
+/*
+ * Wallpaper v3.1.18 - 2014-06-16
+ * A jQuery plugin for smooth-scaling image and video backgrounds. Part of the Formstone Library.
+ * http://formstone.it/wallpaper/
+ *
+ * Copyright 2014 Ben Plum; MIT Licensed
+ */
 
     .wallpaper,
     .wallpaper .wallpaper-container,
@@ -4654,5 +4584,3 @@ span.number {
   -ms-behavior: url(includes/backgroundsize.min.htc);
   behavior: url(includes/backgroundsize.min.htc);
 }
-
-

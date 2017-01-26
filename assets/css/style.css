@@ -38,6 +38,7 @@ h2, h3, h4, h5, h6 {
 
 h1 {
 	font-family: 'BebasNeue', Helvetica, sans-serif;
+  font-size: 5em;
 }
 
 h2 {
@@ -57,8 +58,8 @@ p {
 	margin-bottom: 12px;
   font-family: 'Proxima Nova', Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 15px;
+	line-height: 25px;
 	color: #fff;
 }
 
@@ -241,9 +242,11 @@ input {
 }
 
 #intro {
-	background-color: #000;
-	color: #fff;
-	padding: 5%;
+	padding: 2%;
+}
+
+#intro h3 {
+  padding: 0%;
 }
 
 #intro  .col-md-5 {
@@ -256,6 +259,11 @@ input {
 
 #intro img {
 	max-width: 60px;
+}
+
+.icon {
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 /*mobile*/
@@ -299,17 +307,9 @@ input {
 
 #white h1 {
   text-align: center;
-  font-size: 6em;
-}
-#white p{
-  margin-top: 5%;
 }
 #black h1 {
   text-align: center;
-  font-size: 6em;
-}
-#black p{
-  margin-top: 5%;
 }
 .carousel-caption img {
   max-width: 100%;
@@ -338,20 +338,7 @@ input {
 h4 {
   text-align: center;
 }
-#location {
-	background-image: url(../img/location_map.png);
-	background-color: #EFEFEF;
-  height: auto;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-#location h2 {
-  color: black;
-  padding-bottom: 1%;
-}
+
 .location-details {
 	text-align: center;
 }
@@ -409,51 +396,10 @@ footer {
 }
 }
 
-#black h1{
-  font-size: 12em;
-  transform: rotate(270deg);
-  margin-top: 45%;
-}
-
 /*desktop*/
 @media (min-width: 1200px){
 #intro p {
     margin-left: -2%;
-}
-#black h1{
-  font-size: 12em;
-  transform: rotate(270deg);
-  margin-top: 15%;
-}
-#white h1{
-  font-size: 12em;
-  transform: rotate(270deg);
-  margin-top: 15%;
-}
-#white p {
-  margin-bottom: 20px;
-  padding-top: 22%;
-}
-#black p {
-  margin-bottom: 20px;
-  padding-top: 22%;
-}
-.icon {
-  max-width: 280px;
-}
-#location {
-	background-image: url(../img/location_map.png);
-	background-color: #EFEFEF;
-  height: auto;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-#location h2 {
-  color: black;
-  padding-bottom: 5%;
 }
 .location-cta {
 	margin-top: 12%;
@@ -482,14 +428,12 @@ footer {
 }
 
 #white {
-	background-color: #fff;
-	color: #000;
+	background-color: #F7F7F7;
+  color: #1F2122;
 }
 
-
-#white p {
-  margin: 5%;
-  margin-bottom: 20px;
+#white p{
+  color: #1F2122;
 }
 
 #white .image {
@@ -497,14 +441,14 @@ footer {
 }
 
 #black {
-	background-color: #000;
-	color: #fff;
+	background-color: #F7F7F7;
+  color: #1F2122;
 }
 
 #black p {
-  margin: 5%;
-  margin-bottom: 20px;
+  color: #1F2122;
 }
+
 
 #black .image {
   margin-left: 6%;
@@ -523,19 +467,10 @@ footer {
 	max-width: 100px;
 }
 
-#location p {
-	color: #000;
-}
-
 #location b {
   color:#FF4350;
   font-size: 2em;
   padding: 2%;
-}
-
-.location-details {
-	margin-bottom: 17%;
-  padding-left: 3%;
 }
 
 .testimonials-block {
@@ -738,7 +673,7 @@ blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
 
 .footer {
     background-color: #252729;
-    padding: 50px 0;
+    padding: 20px 0;
 		color: #000;
     font-family: 'DIN', helvetica;
 }
