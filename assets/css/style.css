@@ -30,7 +30,7 @@ body {
 	margin: 0;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3 {
   font-family: 'Proxima Nova', Helvetica, sans-serif;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -39,6 +39,11 @@ h2, h3, h4, h5, h6 {
 h1 {
 	font-family: 'BebasNeue', Helvetica, sans-serif;
   font-size: 5em;
+  text-align: center;
+}
+
+#location h1 {
+  color: white;
 }
 
 h2 {
@@ -53,6 +58,34 @@ h3 {
 	padding-bottom: 6%;
 }
 
+
+h4 {
+	font-size: 2em;
+  font-family: 'BebasNeue';
+	letter-spacing: 3px;
+	color: white;
+  padding: 2%;
+}
+
+h5 {
+  text-transform: none;
+  font-size: 2.2em;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+h6 {
+  color: white;
+  text-transform: none;
+  font-size: 2em;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+#location h5{
+  color: white;
+}
+
 p {
 	padding: 0;
 	margin-bottom: 12px;
@@ -61,6 +94,14 @@ p {
 	font-size: 15px;
 	line-height: 25px;
 	color: #fff;
+}
+
+b {
+  color:#FF4350;
+}
+
+i {
+	font-size: 50px;
 }
 
 html,
@@ -221,10 +262,13 @@ input {
     -o-background-size: cover;
 }
 
-.carousel-caption img {
-  max-width: 50%;
+.carousel-caption {
+  bottom: 5%;
 }
 
+.carousel-caption img {
+  max-width: 40%;
+}
 
 
 .carousel-indicators li {
@@ -235,10 +279,6 @@ input {
 .carousel-indicators .active {
   width: 8px;
   height: 8px;
-}
-
-.logo-header {
-  max-width: 60%
 }
 
 #intro {
@@ -304,13 +344,6 @@ input {
   	border-color: #FF4350;
   	color: #FF4350;
   }
-
-#white h1 {
-  text-align: center;
-}
-#black h1 {
-  text-align: center;
-}
 .carousel-caption img {
   max-width: 100%;
 }
@@ -427,30 +460,29 @@ footer {
   color: white;
 }
 
-#white {
+#work {
 	background-color: #F7F7F7;
   color: #1F2122;
 }
 
-#white p{
-  color: #1F2122;
+#work h1 {
+  padding-top: 5%;
 }
 
-#white .image {
+#work .image {
   margin-left: 6%;
 }
 
-#black {
+#play {
 	background-color: #F7F7F7;
   color: #1F2122;
 }
 
-#black p {
-  color: #1F2122;
+#play h1 {
+  padding-top: 5%;
 }
 
-
-#black .image {
+#play .image {
   margin-left: 6%;
 }
 
@@ -465,12 +497,6 @@ footer {
 
 .pin {
 	max-width: 100px;
-}
-
-#location b {
-  color:#FF4350;
-  font-size: 2em;
-  padding: 2%;
 }
 
 .testimonials-block {
@@ -698,21 +724,6 @@ th {
     border-top: 0px;
 }
 
-h4 {
-	font-size: 3em;
-  font-family: 'BebasNeue';
-	letter-spacing: 1px;
-	color: #000;
-}
-
-h5 {
-	font-weight: 400;
-}
-
-i {
-	font-size: 50px;
-}
-
 .ion-ios-checkmark-outline {
 	font-size: 35px;
 	text-align: center;
@@ -724,7 +735,8 @@ i {
 	color: #fff;
 	border-radius: 0px;
 	border-width: medium;
-  margin-top: 6%;
+  margin-top: 2%;
+  margin-bottom: 4%;
   padding: 11px 65px;
 	font-size: 1.2em;
 	text-transform: uppercase;
