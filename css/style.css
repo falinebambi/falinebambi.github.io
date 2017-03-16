@@ -2320,46 +2320,6 @@ footer {
   margin-top: 10%;
 }
 
-footer .padding {
-    padding: 10px 0
-}
-
-footer h4 {
-  text-align: center;
-}
-
-footer p {
-    color: #C0C0C0;
-    margin: 10px 0 0
-}
-
-footer small {
-    font-size: 13px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-footer img {
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    -ms-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-    -webkit-transform: scale(1.0);
-    -o-transform: scale(1.0);
-    -ms-transform: scale(1.0);
-    transform: scale(1.0);
-}
-
-footer img:hover {
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-
 /********************************************************/
 
 
