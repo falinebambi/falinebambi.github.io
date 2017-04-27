@@ -151,12 +151,12 @@ h3 {
 }
 
 a, h4 {
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'palmbeach', Helvetica, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     color: #F26F70;
-    line-height: 30px
+    line-height: 20px
 }
 
 a, h4 {
@@ -1719,14 +1719,13 @@ blockquote.bigtext {
     cursor: pointer;
     overflow: hidden;
     position: relative !important;
-    background: #666;
     cursor: pointer;
 }
 
 #projects .projects .label {
     position: absolute;
     width: 100.5%;
-    height: 200%;
+    height: 100%;
     top: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -khtml-opacity: 0;
@@ -1764,6 +1763,7 @@ blockquote.bigtext {
 #projects .projects .label-text h3 a {
     color: #eee;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 #projects .projects .label-bg {
@@ -4441,8 +4441,8 @@ img.close-icon {
 }
 
 .pink {
-background-color:#d87a66;
-border-color:#d87a66!important;
+background-color:#082330;
+border-color:#082330!important;
 }
 
 .carousel-inner {
@@ -4529,7 +4529,7 @@ span.number {
 .PB {
   background: #082330;
   background-size: .12em 100%;
-  font: 10em/1 Arial;
+  font: 10em/1 Shrikhand;
 }
 
 .text--line {
@@ -4551,11 +4551,11 @@ svg {
           animation: stroke-offset 9s infinite linear;
 }
 .text-copy:nth-child(1) {
-  stroke: #2dde98;
+  stroke: #ff6c5f;
   stroke-dashoffset: 7%;
 }
 .text-copy:nth-child(2) {
-  stroke: #003666;
+  stroke: #ff6c5f;
   stroke-dashoffset: 14%;
 }
 .text-copy:nth-child(3) {
@@ -4563,11 +4563,11 @@ svg {
   stroke-dashoffset: 21%;
 }
 .text-copy:nth-child(4) {
-  stroke: #FFF;
+  stroke: #ff6c5f;
   stroke-dashoffset: 28%;
 }
 .text-copy:nth-child(5) {
-  stroke: #2dde98;
+  stroke: #ff6c5f;
   stroke-dashoffset: 35%;
 }
 
