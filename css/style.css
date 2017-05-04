@@ -161,7 +161,6 @@ a, h4 {
 
 a, h4 {
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     -webkit-animation: colored 10s infinite linear;
     background-image: -webkit-linear-gradient(90deg, #f35626, #feab3a);
 }
