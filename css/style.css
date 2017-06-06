@@ -4593,7 +4593,7 @@ body {
   height: 100%;
 }
 body {
-  background: black;
+  background: #111;
   font-family: 'tinos', sans-serif;
 }
 .glitch-wrapper {
