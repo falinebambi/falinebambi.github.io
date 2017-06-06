@@ -1690,6 +1690,9 @@ blockquote.bigtext {
 
 
 /********************************************************/
+#project p {
+  color: white;
+}
 
 .sortlinks {
     display: table;
